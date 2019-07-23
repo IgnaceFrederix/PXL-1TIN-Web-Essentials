@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+</head>
+<body>
+<input type="number" id="getal1" title="getal1"/>
+<input type="number" id="getal2" title="getal2"/>
+<input type="submit" value="Bereken" onclick="ButtenKlick()"/><br/>
+<div id="result"></div>
+
+<script type="text/javascript">
+    function ButtenKlick(){
+        var getal1 = document.getElementById("getal1").value;
+        var getal2 = document.getElementById("getal2").value;
+        var totaal = getal1 * getal2;
+
+        if(isNaN(getal1) && isNaN(getal2)){
+            document.getElementById("result").innerHTML = "tes";
+        } else {
+            document.getElementById("result").innerHTML = "Het totaal van de 2 getallen = " + totaal;
+        }
+
+    }
+</script>
+</body>
+</html>

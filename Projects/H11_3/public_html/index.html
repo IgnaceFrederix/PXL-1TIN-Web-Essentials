@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        <input type="number"  id="p1">  x  <input type="number" id="p2">
+         <button id = "klik">Bereken</button>
+         <br>
+         <input type="text" size="40" id="p3">
+         
+       
+        <script>
+         var klik2 = document.getElementById("klik");
+         klik2.onclick = myfunctie;
+         
+         
+           function myfunctie()
+           {
+              var p1 = document.getElementById('p1').value;
+              var p2 = document.getElementById('p2').value;
+              var p3 = p1*p2;
+              var uitkomst = document.getElementById('p3');
+              if( isNaN(p1) | isNaN(p2) ){
+                  uitkomst.value = ("het is geen getal");
+              }else{
+                    uitkomst.value = ("het product van " + p1+ " en " + p2 + " is " + p3);
+              }
+            
+            };
+</script>
+    </body>
+</html>

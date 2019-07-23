@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery - bind</title>
+    <style>
+        p {
+            background: yellow;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        p.over {
+            background: #ccc;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("p").bind("click", function (event) {
+                var str = "( " + event.pageX + ", " + event.pageY + " )";
+                $("span").text("Click happened! " + str);
+            });
+            $("p").bind("dblclick", function () {
+                $("span").text("Double-click happened!");
+            });
+            $("p").bind("mouseenter mouseleave", function (event) {
+                $(this).toggleClass("over");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<p>Click or double click here.</p>
+
+<span></span>
+
+
+</body>
+</html>

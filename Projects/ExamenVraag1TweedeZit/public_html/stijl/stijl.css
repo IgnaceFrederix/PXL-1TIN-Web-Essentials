@@ -1,0 +1,119 @@
+
+body{
+    background-image:url("../figuren/Computer code screen - SS PXL450.jpg");
+    background-color:hsl(220,80%,90%);
+    
+}
+
+article{
+    
+   position: absolute;
+       background-color:rgba(255,255,255, 0.9);
+        max-width: 1200px;
+     display: inline-block;
+      margin: auto;
+      border: 10px grey;
+    border-radius: 10px;
+    position: relative;
+   left: 250px;
+    margin: 4px;
+    
+    
+}
+#main{
+ width:  1450px; 
+   
+    
+}
+#hoofd{
+    width: 1920px;
+}
+#foot{
+   
+     bottom: -350px;
+ 
+}
+
+
+h1{
+    font-family: Arial Black;
+     
+    
+     font-size: 16px;
+     width: 1920px;
+     font-style: bold;
+position: relative;
+left: 550px;
+     
+}
+
+h2{
+    font-family: Verdana,Times New Roman,Helvetica;
+    font-size: 12px;
+}
+p{
+     font-family: Verdana,Times New Roman,Helvetica,sans-serif;
+     font-size: 12px;
+}
+
+p:first-letter{
+    font-size: 30px;
+    position: relative;
+    margin-left: 30px;
+}
+
+footer{
+ font-size: 10px;
+ width: 1920px;
+ position: relative;
+    left: 550px;
+}
+
+img{
+   height: 90px;
+    width: 130px;
+    
+}
+
+a.navi:hover {
+      background-color: hsl(220,90%,80%);
+    
+     
+    
+}
+
+
+aside{
+    text-align: left;
+    position: absolute;
+    
+    width: 150px;
+   
+}
+
+aside.left{
+    text-align: left;
+    left: -150px;
+    top: 60px
+    
+     
+}
+aside.right{
+    text-align: left;
+    top: 80px;
+    right: 300px; 
+}
+
+table tr.special:first-of-type {
+background: chocolate;
+color: white;
+text-align: left;
+}
+tr.special:nth-child(2n+1) {
+background: burlywood;
+color: orange;
+}
+tr.special:nth-child(2n) {
+background: orange;
+color:black;
+}

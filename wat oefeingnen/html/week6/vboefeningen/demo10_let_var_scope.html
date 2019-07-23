@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Let var scope</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+
+    function optellen() {
+        let resultaat = "";
+        for (let teller = 0; teller <= 5; teller++) {
+            resultaat += teller + "<br/>";
+        }
+        for (var andereTeller = 6; andereTeller <= 10; andereTeller++) {
+            resultaat += andereTeller + "<br/>";
+        }
+        //resultaat += "teller=" + teller + "<br/>";
+        resultaat += "andereTeller=" + andereTeller + "<br/>";
+        return resultaat;
+    }
+    document.getElementById("output").innerHTML = optellen();
+</script>
+</body>
+</html>

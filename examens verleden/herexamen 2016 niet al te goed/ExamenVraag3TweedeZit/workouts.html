@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workouts</title>
+    <link rel="stylesheet" type="text/css" href="css/worksheet.css">
+
+    <script language="JavaScript">
+        numberOfExercises = 2;
+     
+       funtion aantal(){
+              return numberOfExercises;
+          }
+
+    </script>
+</head>
+<body>
+    <div id="container">
+    <h1>Rest day?</h1>
+    <h3>That's why no one will remember your name!</h3>
+    <form id="workout" action="generateWorkSheet.php" method="post">
+       
+        <fieldset>
+            <legend>One Round</legend>
+
+            <div id="exercises"><fieldset>
+                <legend>Exercise 1</legend>
+                <select name="exercise1" size="1">
+                    <option>Front plank</option>
+                    <option>Crunches</option>
+                    <option>Left side plank</option>
+                    <option>Leg Raisers</option>
+                  <option>Right side plank</option>
+                </select>
+                Duration: <input type="number" name="exercise1Duration" min="0" max="60" step="5" value="35" /> seconds.&nbsp;
+                Rest: <input type="number" name="exercise1Rest" min="0" max="60" step="5" value="25"/> seconds.
+            </fieldset><fieldset>
+                <legend>Exercise 2</legend>
+                <select name="exercise2" size="1">
+                    <option>Front plank</option>
+                    <option>Crunches</option>
+                    <option>Left side plank</option>
+                    <option>Leg Raisers</option>
+                   <option>Right side plank</option>
+                </select>
+                Duration: <input type="number" name="exercise2Duration" min="0" max="60" step="5" value="35" /> seconds.&nbsp;
+                Rest: <input type="number" name="exercise2Rest" min="0" max="60" step="5" value="25"/> seconds.
+            </fieldset></div>
+
+            <br>
+            <button type="button" id="addExercise">Add Exercise</button>
+        </fieldset>
+        <br>
+        Number of rounds: <input type="number" name="numberOfRounds" min="1" max="10" step="1" value="3" />
+        <br><br>
+        <input type="hidden" name="aantal" value=aantal()>
+        <button type="submit">Create Workout sheet</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+       Rijen = <input  type="text" id="rijen">
+          <br>
+        
+        Kolommen=<input  type="text" id="kolommen">
+        <br>
+        <button id = "geneer">genereertablel</button>
+        <button>geneerer code</button>
+        
+        
+        
+         <script>
+            geneer.addEventListener('click',function() {
+            document.getElementById("geneer").addEventListener('click', myfunctie());
+            });      
+           function myfunctie()
+           {
+               var test;
+              var rijen = document.getElementById("rijen").value;
+              var kolommen = document.getElementById("kolommen").value;
+              for( i=0; i < rijen;i++ ){
+                  test += "<tr>";
+                  for(j=0; j< kolommen;j++){
+                      test += "\n<td></td>\n";
+                  }
+              }
+              innerHTML(test);
+            };
+            </script>
+
+
+    </body>
+</html>

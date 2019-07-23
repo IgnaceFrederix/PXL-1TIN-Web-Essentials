@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<output id="output" ></output>
+<script>
+    var globalvar;
+    window.addEventListener('load',function(){
+        var eigenschappen = "width=300, height=300, left=150";
+        nieuwVenster = window.open("", "info", eigenschappen, false);
+        var nieuweBody = nieuwVenster.document.getElementsByTagName("body")[0];
+        var title = document.createElement("p");
+        title.innerHTML = "Give me your name:";
+        var paragraph = document.createElement("input");
+        var oke = document.createElement("button");
+        var annuleren = document.createElement("button");
+        var t = document.createTextNode("Ok");
+        var f = document.createTextNode("Annuleren");
+        var enter = document.createElement("p");
+        enter.innerHTML = "<br>";
+        oke.appendChild(t);
+        oke.style.marginRight = '10px';
+        annuleren.appendChild(f);
+        nieuweBody.appendChild(title);
+        nieuweBody.appendChild(paragraph);
+        nieuweBody.appendChild(enter);
+        nieuweBody.appendChild(oke);
+        nieuweBody.appendChild(annuleren);
+    });
+
+
+
+
+
+
+</script>
+</body>
+</html>

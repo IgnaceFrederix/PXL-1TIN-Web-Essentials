@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>>Vraag2: Examen 2015-2016</title>
+  <link rel="stylesheet" href="css/bord.css" type="text/css" id="bord" />
+
+	<script>
+	window.addEventListener("load",VulElement);
+	var count = 0;
+
+	function Wis(){
+	    for(var i = 0;i <50 ;i++){
+            document.getElementsByClassName("element").item(i).style.backgroundColor = null;
+            document.getElementsByClassName("element").item(i).style.borderColor = "red";
+		}
+	}
+	function ChangeCSS(){
+	    if(count ==0){
+	        count += 1;
+            document.getElementById("bord").setAttribute("href","css/bord2.css");
+		}else{
+            document.getElementById("bord").setAttribute("href","css/bord.css");
+	        count = 0;
+		}
+
+	}
+	function VulElement()
+    {
+
+        document.getElementById("buttonopmaak").addEventListener("click",ChangeCSS);
+        document.getElementById("buttonwis").addEventListener("click",Wis);
+        var x =  document.getElementsByClassName("element");
+        for (var i = 0; i < 50; i++) {
+			(function(){
+			    var indexx = i;
+                x[i].addEventListener("click",function(){
+                    MaakKleur(indexx);
+				},false);
+			}());
+               }
+        }
+
+		function MaakKleur(index) {
+            document.getElementsByClassName("element").item(index).style.backgroundColor = document.getElementById("kleur").value;
+            document.getElementsByClassName("element").item(index).style.borderColor = document.getElementById("kleur").value;
+        }
+	</script>
+</head>
+<body>
+<div class="board">
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+<div id="nodigepadding">
+	Kleur:
+	<select id="kleur">
+		<option selected="selected" value="black">Zwart</option>
+		<option value="red">Rood</option>
+		<option value="yellow">Geel</option><br>
+	</select><br>
+</div>
+	<input type="button" value="Wis alles" id="buttonwis">
+	<input type="button" value="Verander opmaak" id="buttonopmaak">
+
+
+
+
+</div>
+</body>
+</html>

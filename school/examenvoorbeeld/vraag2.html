@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Vraag 2: Proefexamen 2013-2014</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<div class="wrapper">
+    <aside>
+        <ul class="list">
+            <li class="title"><b>Tickets</b></li>
+            <li>
+            <form action="www.tickets.be/bestel.cgi" method="post">
+
+                <fieldset>
+                    <legend>Datum en uur</legend>
+                    <label for="dag">Datum</label> =
+
+                    <select name="dag" id="dag">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                    <br/>
+
+                    <label for="maand">Maand</label> =
+
+                    <select name="maand" id="maand">
+                        <option value="Januari">Januari</option>
+                        <option value="Februari">Februari</option>
+                        <option value="Maart">Maart</option>
+                        <option value="April">April</option>
+                        <option value="Mei">Mei</option>
+                        <option value="Juni">Juni</option>
+                        <option value="Juli">Juli</option>
+                        <option value="Augustus">Augustus</option>
+                        <option value="September">September</option>
+                        <option value="Oktober">Oktober</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+
+                    <br/>
+
+                    <input type="radio" name="tijd" value="14:00"/> 14:00 <br/>
+                    <input type="radio" name="tijd" value="19:00"/> 19:00 <br/>
+                    <input type="radio" name="tijd" value="21:00"/> 21:00
+                </fieldset>
+
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend>
+                    <label for="naam">Naam</label><br/>
+                    <input type="text" name="naam" id="naam"/>
+                    <br/><br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Verwerken</legend>
+                    <input type="reset" value="wissen"/>
+                    <input type="submit" value="zenden"/>
+                </fieldset>
+
+            </form>
+            </li>
+        </ul>
+    </aside>
+    <div class="container">
+        <div class="image">
+            <img src="figuren/10000bc.jpg" alt=""/>
+
+            <div class="title"><b>10000 jaar voor de tijdrekening</b></div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <footer>
+        <a href=""><span class="btn">Informatie</span></a>
+        <a href=""><span class="btn">Cast</span></a>
+        <a href=""><span class="btn">Downloads</span></a>
+        <a href="vraag2.html"><span class="btn">Tickets</span></a>
+        <a href="vraag1.html"> <span class="btn">Home</span> </a>
+    </footer>
+</div>
+<body>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulieren - tekstvelden</title>
+	</head>
+
+	<body>
+		<h1>Gelieve dit formulier in te vullen</h1>
+		<form>
+			<table>
+				<tr>
+					<td><label name="Naam">Naam:</label></td>
+					<td><input type="text" name="naam" /></td>
+					<td><label name="Voornaam">Voornaam:</label></td>
+					<td><input type="text" name="voornaam" /></td>
+				</tr>
+				<tr>
+					<td><label name="Straat">Straat:</label></td>
+					<td><input type="text" name="Straat" /></td>
+					<td><label name="Nummer">Nummer:</label></td>
+					<td><input type="number" name="Nummer" size="5"/></td>
+					<td><label name="Bus">Bus:</label></td>
+					<td><input type="number" name="Bus" size="3"/></td>
+				</tr>
+				<tr>
+					<td><label name="Postnummer">Postnummer:</label></td>
+					<td><input type="number" name="postnummer" size="6" maxlength="4"/></td>
+					<td><label name="Gemeente">Gemeente</label></td>
+					<td><input type="text" name="Gemeente" /></td>
+				</tr>
+				<tr>
+					<td><label for="Provincie">Provincie:</label></td>
+					<td><input type="text" name="Provincie"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><input type="reset" value="Alles wissen" /></td>
+					<td colspan="2" align="right"><input type="submit" value="Verzenden"/></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

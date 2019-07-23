@@ -1,0 +1,11 @@
+/*
+http://www.digital-web.com/articles/everything_you_know_about_CSS_Is_wrong/
+*/
+div.tabel {display:table;}
+div.tabel div.rij{display: table-row;}
+
+div.tabel div.titel{ display:table-cell;}
+div.tabel div.invoer{ display:table-cell;   }
+
+div.tabel div.invoer input[type="text"], div.tabel div.invoer input[type="password"]{width:95%;}
+

@@ -1,0 +1,27 @@
+table {
+	width: 100%;
+}
+
+
+thead {
+	text-align: center;
+	background: red;
+	color: white;
+}
+
+tfoot {
+	text-align: center;
+}
+
+tbody {
+	background: #FF7F50;
+}
+
+.rood {
+	background: red;
+	color: white;
+}
+
+.beige{
+	background: #FF7F50;
+}

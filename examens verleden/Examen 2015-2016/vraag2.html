@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>>Vraag2: Examen 2015-2016</title>
+  <link  id="linkedCss" rel="stylesheet" href="css/bord.css" type="text/css" />
+</head>
+<body>
+<div class="board">
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+	<div class="row">
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+		<div class="element"></div>
+	</div>
+
+	<label for="colorPicker">Kleur:</label>
+	<select id="colorPicker">
+		<option value="black">black</option>
+		<option value="yellow">yellow</option>
+		<option value="red">red</option>
+	</select>
+
+	<br />
+
+	<button id="clear">Wis alles</button>
+	<button id="changeCss">Verander opmaak</button>
+
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function() {
+			$(".element").click(function() {
+				$(this).css("backgroundColor", $("#colorPicker").val());
+				$(this).css("borderColor", $("#colorPicker").val());
+			});
+
+			$("#clear").click(function() {
+				$(".board .row").each(function () {
+					$(".element", this).each(function () {
+						$(this).css("backgroundColor", "");
+						$(this).css("borderColor", "");
+					})
+
+				})
+			});
+
+			$("#changeCss").click(function() {
+				if($("#linkedCss").attr("href") == "css/bord.css") {
+					$("#linkedCss").attr("href", "css/bord2.css");
+				} else {
+					$("#linkedCss").attr("href", "css/bord.css");
+				}
+			});
+		});
+	</script>
+
+
+
+
+
+</div>
+</body>
+</html>

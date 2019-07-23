@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vraag 1a</title>
+    <link href="stijl/stijl.css" rel="stylesheet"/>
+    <script>
+
+        function add() {
+            current = document.getElementById("helper").innerHTML;
+            document.getElementById("helper").innerHTML = current + "<select> <option>Funny ananasmocktail</option> <option>Roze bubbels</option> <option>Passion sunrise</option> </select> <input type=\"number\" name=\"nm\" onchange=\"giveTotal()\"><br>";
+
+
+        }
+        function giveTotal() {
+            var totaal = document.getElementsByName("nm");
+            var sum = 0;
+            for (var i in totaal){
+                sum += totaal.item(i).value;
+            }
+            document.getElementById("totaal").innerHTML ="Totaal:" +sum;
+        }
+    </script>
+</head>
+<body>
+<header class="wrapper">
+    <h1>Bestellen</h1>
+    <a href="vraag1a.html">terug naar mocktails</a>
+</header>
+
+<main class="wrapper">
+    <section style="width: 100%">
+        <p>
+            Bestel hier alles om tijdens jouw feestje de lekkerste mocktails te serveren.
+            Op de door u gekozen datum worden alle ingrediënten op het opgegeven adres geleverd.</p>
+        <form>
+
+            <div class="row"><label>Voornaam:</label> <input type="text"> <label>Naam:</label><input type="text"><br>
+            </div>
+            <div class="row"><label>Straat en nr:</label><input type="text"> <br></div>
+            <div class="row"><label>Postcode: </label><input type="number" min="1000" max="9999">
+                <label>Gemeente:</label><input type="text"><br></div>
+            <div class="row"><label>Leverdatum:</label><input type="date"><br></div>
+            <div class="row"><select>
+                <option>Funny ananasmocktail</option>
+                <option>Roze bubbels</option>
+                <option>Passion sunrise</option>
+            </select>
+                <input type="number" name="nm" onchange="giveTotal()">
+                <div id="helper">
+
+                </div>
+                <input type="button" value="+" onclick="add()"></div>
+            <div id="totaal">Totaal:</div>
+
+            <input type="submit" value="Bestellen">
+        </form>
+    </section>
+</main>
+</body>
+</html>

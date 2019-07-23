@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type = "text/css" href="week6oef8CSS.css" media="">
+<body>
+<span class=email>Geef een geldig e-mailadres in:</span>
+<input type ="email" class="sharing emaill"><br>
+<span class="naam">Naam</span>
+<input type ="text" class="sharing naam"><br>
+<span class="naam2">Naam2</span>
+<input type ="text" class="sharing naam2"><br>
+<span class="subdomein">Subdomein</span>
+<input type ="text" class="sharing subdomein"><br>
+<span class="domein">Domein</span>
+<input type ="text" class="sharing domein"><br>
+<input type="button" value="Splits op" id="klikker">
+</body>
+<script>
+document.getElementById("klikker").addEventListener("click",splitsOp);
+
+function splitsOp (){
+    var tekst = document.getElementsByTagName('input').item(0).value;
+    var eerste = tekst.indexOf('.');
+    var naam = tekst.substring(0,eerste);
+    var tweede = tekst.indexOf('@');
+    var naam2 = tekst.substring(eerste + 1 ,tweede);
+    var derde = tekst.indexOf('.',tweede);
+    var subdomein = tekst.substring(tweede +1,derde);
+    var domein = tekst.substring(derde +1);
+    document.getElementsByTagName('input').item(1).value = naam;
+    document.getElementsByTagName('input').item(2).value = naam2;
+    document.getElementsByTagName('input').item(3).value = subdomein;
+    document.getElementsByTagName('input').item(4).value = domein;
+
+}
+</script>
+</html>

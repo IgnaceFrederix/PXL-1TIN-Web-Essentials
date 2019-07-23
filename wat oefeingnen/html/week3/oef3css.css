@@ -1,0 +1,20 @@
+table tr:first-child{
+	background-color:brown;
+	color:yellow;
+}
+table tr:nth-child(2n+2){
+	background-color:coral;
+	color:blue;
+}
+table tr:nth-child(2n+3){ 
+	background-color:plum;
+	color:orange;
+}
+body{
+	
+}
+table tr{
+	font-size:24pt;
+	text-align:left;
+	text-indent:0.2em;
+}

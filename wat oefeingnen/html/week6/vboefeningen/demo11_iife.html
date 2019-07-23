@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 11: IIFE</title>
+    <style>
+        output {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<output id="output1"></output>
+<output id="output2"></output>
+<output id="output3"></output>
+<script>
+    (function () {
+            "use strict";
+            (function () {
+                var now = new Date();
+                var start = new Date(now.getFullYear(), 0, 0);
+                var diff = now - start;
+                var oneDay = 1000 * 60 * 60 * 24;
+                var days = Math.floor(diff / oneDay);
+                document.getElementById("output1").innerText = "Dag van het jaar:" + days;
+            })();
+
+            (function (bedrag) {
+                var incBtw = 1.21;
+                document.getElementById("output2").innerText = "Bedrag inc. btw: " + (incBtw * bedrag);
+            }(120));
+
+            var min = Math.min(15, (function () {
+                return new Date().getDate();
+            })());
+
+            document.getElementById("output3").innerText = min;
+    }());
+</script>
+</body>
+</html>

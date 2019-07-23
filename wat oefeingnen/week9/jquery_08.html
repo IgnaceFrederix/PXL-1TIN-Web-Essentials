@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mousemove demo</title>
+    <style>
+        div {
+            width: 220px;
+            height: 170px;
+            margin: 10px 50px 10px 10px;
+            background: yellow;
+            border: 2px groove;
+            float: right;
+        }
+    </style>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("div").mousemove(function (event) {
+                var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
+                $("span:last").text("( event.pageX, event.pageY ): " + pageCoords);
+            });
+        });
+    </script>
+
+</head>
+<body>
+<p>
+    <span>Move the mouse over the div.</span>
+    <span>&nbsp;</span>
+</p>
+<div></div>
+</body>
+</html>

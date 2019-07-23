@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body onload="tijdopvragen()">
+<output id="output" ></output>
+<script>
+ function tijdopvragen() {
+var d = new Date();
+var hour = d.getHours();
+if(hour >= 6 && hour <= 9){
+document.getElementById("output").value = "Breakfast served";
+}
+else if(hour >= 11 && hour <= 13){
+document.getElementById("output").value = "lunchtime";
+}
+else if(hour >= 16 && hour <= 20){
+document.getElementById("output").value = "Dinner tijd!!!!";
+}
+
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

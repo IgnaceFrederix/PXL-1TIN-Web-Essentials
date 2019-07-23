@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="newcss.css"/>
+    </head>
+    <body>
+        
+        <h1>Speel Jip en Janneke memory</h1>
+        <table>
+             <tr>
+                 <td><img id="image" src="voorkant.jpg" alt=""/> </td>
+            
+            <td>  <img id="image2" src="voorkant.jpg" alt=""/></td>
+            <td>  <img id="image3" src="voorkant.jpg" alt=""/></td>
+            <td>  <img id="image4" src="voorkant.jpg" alt=""/></td>
+            </tr>
+              <tr>
+            <td> <img id="image5" src="voorkant.jpg" alt=""/> </td>
+            
+            <td>  <img id="image6" src="voorkant.jpg" alt=""/></td>
+            
+            <td>  <img id="image6" src="voorkant.jpg" alt=""/></td>
+            <td>  <img id="image2" src="voorkant.jpg" alt=""/></td>
+            </tr>
+              <tr>
+                 <td> <img id="image2" src="voorkant.jpg" alt=""/> </td>
+            
+            <td>  <img id="image4" src="voorkant.jpg" alt=""/></td>
+            <td>  <img id="image5" src="voorkant.jpg" alt=""/></td>
+            <td>  <img id="image" src="voorkant.jpg" alt=""/></td>
+            </tr>
+        </table>
+        
+        <button id="speel">speel opnieuw</button>
+        <script>
+            var  afbeelding =[
+        "anneke.gif",
+        "ansje.gif",
+        "takkie.gif",
+        "tantemies.gif",
+        "vlekkie.gif",
+        "knotje.gif"
+      ]; 
+
+        function handelClick(e){
+          var img =e.target;
+          if(img.tagName ==="IMG"){
+              return;
+          }
+        }
+        
+        function isVoorkant(img){
+            return img.src === pad+voorkant;
+        }
+         var afbeelding2;
+        var test=true;
+         document.getElementById("speel").onclick = function() { 
+          
+           for( var i =0; i< afbeelding.length;i++){
+             var rand=  Math.floor((Math.random() * 11)); 
+               afbeelding2[i]=afbeelding[rand];
+           }
+         };
+ 
+    
+
+  document.getElementById("image").onclick = function() { 
+    if(test===true){
+       document.getElementById("image").src ="ansje.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+  document.getElementById("image2").onclick = function() { 
+    if(test===true){
+       document.getElementById("image2").src ="knotje.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+  document.getElementById("image3").onclick = function() { 
+    if(test===true){
+       document.getElementById("image3").src ="takkie.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+  document.getElementById("image4").onclick = function() { 
+    if(test===true){
+       document.getElementById("image4").src ="tantemies.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+  document.getElementById("image5").onclick = function() { 
+    if(test===true){
+       document.getElementById("image5").src ="vlekkie.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+document.getElementById("image6").onclick = function() { 
+    if(test===true){
+       document.getElementById("image6").src ="anneke.gif";
+       test=false;
+    }else{
+        this.src = "voorkant.jpg";
+        test=true;
+    }
+    
+};
+        
+        </script>
+    </body>
+</html>

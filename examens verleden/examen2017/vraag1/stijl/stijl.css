@@ -1,0 +1,100 @@
+body {
+    background: url("../figuren/summer_background.jpg");
+}
+
+.wrapper {
+    width: 60%;
+    border-radius: 20px;
+    border: 2px #F8060c solid;
+    background-color: hsla(0, 0%, 75%, 0.80);
+    margin: 10px auto auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+#container {
+    padding: 10px;
+    width: 320px;
+    margin: 10px auto auto;
+}
+
+h1 {
+    font-family: Times, Arial, Verbana;
+    color: #F8060c;
+    font-size: 36px;
+}
+
+header nav {
+    width: 100%;
+    background-color: #F8060c;
+}
+
+header nav li {
+    display: inline;
+    background-color: #F8060c;
+}
+
+header nav li a {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header nav li a:hover {
+    background-color: gray;
+    text-align: center;
+}
+
+h2 {
+    text-shadow: #F8060c 1px 1px;
+    text-align: center;
+
+}
+
+section {
+    width: 40%;
+    margin-right: 75px;
+    float: left;
+
+}
+
+aside {
+    float: left;
+}
+
+table {
+    border: 1px solid;
+    margin: 10px auto;
+    text-align: left;
+}
+
+table tr:first-child {
+    font-weight: bold;
+}
+
+table tr:nth-child(2) {
+    font-weight: bold;
+}
+
+table tr td {
+    border: 1px solid;
+
+}
+
+table tr th {
+    color: white;
+    background-color: #F8060c;
+    text-align: center;
+}
+
+label{
+     width: 100px;
+ }
+div.row{
+    width:auto;
+    margin:10px;
+}

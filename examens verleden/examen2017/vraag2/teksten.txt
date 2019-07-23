@@ -1,0 +1,18 @@
+Platform eXtreme Leadership
+Counter Terrorism Team Planner
+Terrorism is a significant threat to peace and security, prosperity and people.
+
+Error: you can't create a team without providing the number of members.
+Unable to create team!
+Error: you can't create a team with the provided number of members.
+Create a team with
+Team and Game Values
+
+Error: input data array is way too small.
+Error: no name was supplied.
+Error: no members were supplied.
+Error: input data array not the right size.
+
+The team has a good chance!
+The team is going to have a hard time!
+It looks like a 50/50 chance.

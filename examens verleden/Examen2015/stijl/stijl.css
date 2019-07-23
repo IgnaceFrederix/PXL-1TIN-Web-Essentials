@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+#facebook {
+    background-color: #3a5795;
+}
+#facebook h1 {
+    font-family: Arial;
+    width: 800px;
+    height: 60px;
+    margin: auto;
+    color: white;
+}
+
+#container {
+    width: 800px;
+    margin: auto;
+}
+
+#header {
+    height: 344px;
+    background-image: url(../figuren/pxl.jpg);
+}
+
+#header h1 {
+    font-family: Geneva, Helvetica, sans-serif;
+    font-size: 48pt;
+    text-shadow: 5px 5px 5px white;
+}
+
+nav {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+nav li a {
+    display: inline-block;
+    width: 65px;
+    text-decoration: none;
+    color: gray;
+}
+nav li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+#content {
+    clear: both;
+    margin-top: 5px;
+}
+
+#content aside {
+    float: left;
+    border: 1px solid black;
+    width: 315px;
+}
+
+#content aside p {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#content aside img {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#content header {
+    background-color: lightgray;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+#content p {
+    margin: 2px 0px 2Px 20px;
+}
+#content section {
+    float: right;
+    width: 475px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+#content section article {
+    padding: 5px;
+    text-indent: 20px;
+    margin-bottom: 40px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: white;
+    background-color: #3a5795;
+}
+
+#chat {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+}

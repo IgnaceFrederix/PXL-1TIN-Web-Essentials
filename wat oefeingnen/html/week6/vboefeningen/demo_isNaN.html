@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo: isNaN</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+    function roundNumber() {
+        var getal = prompt("Geef een getal in: ");
+        if (isNaN(getal)) {
+            return "U heeft geen getal ingegeven: " + getal;
+        } else {
+            var afrond = parseInt(getal + 0.5);
+            return "Het getal " + getal + " is afgerond naar " + afrond;
+        }
+    }
+    document.getElementById("output").innerText = roundNumber();
+</script>
+
+</body>
+</html>

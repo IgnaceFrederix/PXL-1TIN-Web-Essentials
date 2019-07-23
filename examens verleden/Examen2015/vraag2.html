@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Examen 2013-2014: Vraag 2</title>
+    <link href="stijl/stijl.css" rel="stylesheet" type="text/css" />
+    <script src="script/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var checkName = false;
+        var checkOpname = false;
+
+        function valideerNaam() {
+            var invoer = document.getElementById("naam").value;
+            var naam = document.getElementById("naam");
+            var naamWarning = document.getElementById("naamWarning");
+            if (invoer == "" || invoer == null) {
+                naamWarning.innerHTML = "Naam moet ingevuld!!";
+                naamWarning.style.color = "red";
+                makeRedWhite(naam);
+            } else {
+                naamWarning.innerHTML = "";
+                makeGreenBlack(naam);
+                checkName = true;
+            }
+        }
+
+        function valideerCategorie() {
+            var categorie = document.getElementById("categorie").value;
+            var opnameHoeveelheid = document.getElementById("opname").value;
+            var opname = document.getElementById("opname");
+            var saldoHoeveelheid = document.getElementById("saldo").value;
+            var saldo = document.getElementById("saldo");
+            var opnameWarning = document.getElementById("opnameWarning");
+            if (categorie == "18 jaar t.e.m. 25 jaar") {
+                if (opnameHoeveelheid < 0 || opnameHoeveelheid > 100) {
+                    opnameWarning.innerHTML = "Opname mag niet lager dan 0 en niet hoger dan 100 zijn!";
+                    opnameWarning.style.color = "red";
+                    makeRedWhite(opname);
+                } else {
+                    opnameWarning.innerHTML = "";
+                    makeGreenBlack(opname);
+                    checkOpname = true;
+                }
+                if (saldoHoeveelheid - opnameHoeveelheid < 0) {
+                    opnameWarning.innerHTML = "Saldo mag niet onder 0 uitkomen, neem minder op!";
+                    opnameWarning.style.color = "red";
+                }
+            } else {
+                if (opnameHoeveelheid < 0) {
+                    opnameWarning.innerHTML = "Opname mag niet lager dan 0 zijn!";
+                    opnameWarning.style.color = "red";
+                    makeRedWhite(opname);
+                } else if (saldoHoeveelheid - opnameHoeveelheid < -50) {
+                    opnameWarning.innerHTML = "Saldo mag niet onder -50 uitkomen, neem minder op!";
+                    opnameWarning.style.color = "red";
+                    makeRedWhite(opname);
+                } else {
+                    opnameWarning.innerHTML = "";
+                    makeGreenBlack(opname);
+                    checkOpname = true;
+                }
+            }
+        }
+
+        function makeRedWhite(veld) {
+            veld.style.backgroundColor = "red";
+            veld.style.color = "white";
+        }
+
+        function makeGreenBlack(veld) {
+            veld.style.backgroundColor = "green";
+            veld.style.color = "black";
+        }
+
+        function checkForm() {
+            var opnameHoeveelheid = document.getElementById("opname").value;
+            var saldoHoeveelheid = document.getElementById("saldo").value;
+            var saldo = document.getElementById("saldo");
+            if (checkName == true && checkOpname == true) {
+                var uitkomst = saldoHoeveelheid - opnameHoeveelheid;
+                saldo.value = uitkomst;
+            } else {
+                return false;
+            }
+        }
+
+        function voerUitBijLaden() {
+            //dit wordt uitgevoerd bij het inladen van de body;
+        }
+
+    </script>
+</head>
+
+<body onload="voerUitBijLaden()">
+<form>
+    <fieldset>
+        <legend>Opname geld rekening</legend>
+        Rekeningnummer: 001-0000001-01</br>
+        <table>
+            <tr>
+                <td><label for="naam">Naam : </label></td><td><input id="naam" type="text" onchange="valideerNaam();" /></td><td></td><td id="naamWarning"></td>
+            </tr>
+            <tr>
+                <td><label for="categorie">Categorie : </label></td>
+                <td>
+                    <select id="categorie" >
+                        <option>18 jaar t.e.m. 25 jaar</option>
+                        <option>25 jaar en ouder</option>
+                    </select>
+                </td>
+                <td>Leeftijd</td><td id="categorieWarning"></td>
+            </tr>
+            <tr>
+                <td>Opname : </td><td><input id="opname" type="number" onchange="valideerCategorie();" /></td><td>Euro</td><td id="opnameWarning"></td>
+            </tr>
+            <tr>
+                <td>Saldo : </td><td><input id="saldo" type="number" value="150" disabled="disabled" /></td><td>Euro</td><td id="saldoWarning"></td>
+            </tr>
+        </table>
+        <button type="submit" id="knop" onclick="checkForm()">Registreer</button>
+    </fieldset>
+
+</form>
+
+
+</body>
+</html>

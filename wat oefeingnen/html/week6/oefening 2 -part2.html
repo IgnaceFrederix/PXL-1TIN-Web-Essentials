@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body>
+<input type="number" id="vak1" value=""> 
+X
+<input type="number" id="vak2" value="">
+<input  type="button" id ="bereken" value ="Berekenen">
+<output id="output"></output>
+<script>
+ 
+  document.getElementById("bereken").addEventListener("click", optellen);
+ function optellen() {
+ 
+ var getal1 = document.getElementById('vak1').value;
+ var getal2 = document.getElementById('vak2').value;
+
+ if(isNaN(getal1)==false && isNaN(getal2)==false) {
+	var boodschap = "Product = " + getal1*getal2; 
+    document.getElementById("output").value = boodschap;	
+	}
+ else{
+	document.getElementById("output").value = "U hebt geen geldige getallen ingegeven";
+	}
+ 
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

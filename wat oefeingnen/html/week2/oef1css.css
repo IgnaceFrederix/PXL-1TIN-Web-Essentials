@@ -1,0 +1,19 @@
+h1 {
+	font-family:Times;
+	font-size: 24pt;
+	color:white;
+}
+h2{
+	font-family:Times;
+	font-size: 18pt;
+	color:silver;
+}
+p{
+	font-family:Arial;
+	font-size:15 pt;
+	line-height: 20 pt;
+	margin-left: 1in;
+}
+body{
+	background-color:gray;
+}

@@ -1,0 +1,30 @@
+.sharing{
+    position:absolute;
+    left:240px;
+
+}
+.email{
+    position:absolute;
+    top:10px;
+}
+.naam{
+    position:absolute;
+    top: 35px;
+}
+.naam2{
+    position:absolute;
+    top:60px;
+}
+.subdomein{
+    position:absolute;
+    top:85px;
+}
+.domein{
+    position:absolute;
+    top: 110px;
+}
+#klikker{
+    position:absolute;
+    top: 130px;
+    left:100px;
+}

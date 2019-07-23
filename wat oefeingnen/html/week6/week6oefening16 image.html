@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>De tovenaar</title>
+</head>
+<body>
+<h1>De verdwijnende tovenaar</h1><br>
+<p>De figuur verdwijnt als je er op klikt en komt terug tevoorschijn als je hier op het woord <a href="#" id="tovenaarwoord">tovenaar</a> klikt.</p>
+<img src="../images/illusionist.jpg" style="float:right; height: 700px;width:1000px;" id="foto">
+<script>
+    document.getElementById("foto").addEventListener("click",VerbergFoto);
+    document.getElementById("tovenaarwoord").addEventListener("click",LaatZien);
+    function VerbergFoto() {
+        document.getElementById("foto").style.visibility ="hidden";
+    }
+    function LaatZien() {
+        document.getElementById("foto").style.visibility = "visible";
+    }
+</script>
+</body>
+</html>

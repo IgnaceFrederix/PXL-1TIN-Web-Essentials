@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select onchange="FontFamily()" id="eerste">
+    <option value="Arial">Arial</option>
+    <option value ="Times">Times</option>
+    <option value="Courier">Courier</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Sans-serif">Sans-serif</option>
+    <option value="Serif">Serif</option>
+    <option value="Verdana">Verdana</option>
+</select>
+<select onchange="LetterGrootte()" id="tweede">
+    <option value="8pt">8pt</option>
+    <option value="10pt">10pt</option>
+    <option value="12pt">12pt</option>
+    <option value="16pt">16pt</option>
+    <option value="20pt">20pt</option>
+    <option value="24pt">24pt</option>
+    <option value="28pt">28pt</option>
+</select><br>
+<p id="tekst" >Voorbeeld tekst om het letttertype te illustreren</p>
+<script>
+    function LetterGrootte(){
+        var grootte = document.getElementById("tweede").value;
+        document.getElementById("tekst").style.fontSize = grootte ;
+    }
+    function FontFamily() {
+        var select = document.getElementById("eerste").value;
+        document.getElementById("tekst").style.fontFamily = select;
+    }
+</script>
+</body>
+</html>

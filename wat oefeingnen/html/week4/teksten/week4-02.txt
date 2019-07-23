@@ -1,0 +1,73 @@
+Web Essentials
+1ste Jaar Professionele Bachelor Toegepaste Informatica
+Hogeschool PXL
+
+Inhoud
+Competentie
+Werkvormen
+Evaluatie
+Leermaterialen
+Planning
+HOME
+
+Competentiebeschrijving
+Je leert de nodige vaardigheden om zelf een statische website te maken. Hiervoor werken we met de gangbare
+webstandaarden, namelijk Hypertext Markup Language (HTML) en Cascading Style Sheets (CSS). In het laatste deel
+krijg je een introductie tot meer geavanceerde standaarden en scriptingtalen om zo je eerste dynamische pagina's
+te bekomen. Het is de bedoeling dat je naast het hanteren van deze vaardigheden ook een gefundeerde keuze kan
+maken aan de hand van het doel van de website of onderdelen van de website. Je leert ook je code te
+documenteren, te onderhouden en te hergebruiken. Je verwerft vaardigheden om multimediatoepassingen te
+realiseren in verschillende contexten. Om je de nodige inzichten te geven in de manier waarop dit alles werkt,
+zal je rechtstreeks met de code werken door middel van een tekst editor. Je leert ook hoe je een website kan
+installeren en valideren.
+
+Werkvormen
+Begeleide kennisverwerving (36,00 uren)
+Omschrijving:
+De sessies worden ingeleid door de lector die een korte uiteenzetting geeft van de voornaamste concepten. De
+studenten kunnen de leerstof onmiddellijk in de praktijk brengen aan de hand van oefeningen. De lector staat ter
+beschikking om onmiddellijk feedback te geven. De lessen worden volledig praktisch opgebouwd, aangevuld met
+Blackboard en PluralSight ondersteuning.
+Zelfstudie (76,00 uren)
+
+Evaluatie
+Je kent en begrijpt de concepten van de meest gebruikte webtechnologie&euml;n zoals Hypertext Markup Language
+(HTML, xHTML), Cascading Style Sheets (CSS), Javascript en het DOM. Je kan een gefundeerde keuze maken voor de
+opmaak van een statische website. Je kan een webpagina volledig coderen, documenteren en onderhouden. Je kan
+koppelingen en afbeeldingen invoegen, lijsten en tabellen gebruiken en formulieren opmaken. Voor de lay-out van
+een website kan je de verschillende methodes toepassen, zoals frames, tabellen en layers. Je kan eenvoudige
+scripts (JavaScript) ontwikkelen. Je begrijpt het Document Object Model en kan dit toepassen in eenvoudige
+toepassingen. Je kan een website valideren en installeren.
+
+Leermaterialen
+  Cursus: Cleuren J, Webtechnology Essentials, 2013
+  Website: eigen website van de student.
+Achtergrondinformatie
+  Freeman Elisabeth, Freeman Eric, Head First HTML with CSS &amp; XHTML, O&acute;Reilly Media Inc., 2006 (ISBN 0-596-10197-x)
+  Hughes, Cheryl M., The web wizard&acute;s guide to XHTML, Addison Wesley -Pearson, 2004 (ISBN 0-321-17868-8)
+  Teage, Jason Cranford, Snel op Weg: DHTML en CSS voor het World Wide Web, Pearson Eduction Uitgeverij BV,
+      2002 (ISBN 90-430-0505-3)
+
+Planning lessen
+  Week 1:
+    Hst 1: Inleiding HTML5 + Hst 2: Layout + oef
+    Hst 3: Cascading Style Sheets + oef
+  Week 2:
+    Hst 4: Opmaak + Hst5: Hyperlinks + Hst 6: Lijsten + oef
+    Hst 6: oef + Hst 7: Afbeeldingen
+  Week 3:
+    Hst 8: Tabellen + oef
+    Grote oefeningen Hfdst 4 tm 8 met CSS
+  Week 4:
+    Hst 9: Positioneren met CSS + oef
+  Week 5:
+    Hst 10: Formulieren + oef
+    Hst 11: Audio en Video + oef
+  Week 6:
+    Hst 12: Core JavaScript + oefeningen
+  Week 7 en 8:
+    Hst 13: DOM + Hst 14: DOM-scripting
+    Oef JavaScript/DOM
+  Week 9:
+    ...
+    ...

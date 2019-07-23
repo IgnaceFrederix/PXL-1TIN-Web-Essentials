@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery voorbeeld 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script  src="scripts/jquery-3.2.1.min.js"></script>
+        <script >
+            $(document).ready(function(){
+               $('#btn').click(function(){
+					$("div#output").html($("div#input").html());
+				}); 
+            });
+        </script>
+    </head>
+    <body>
+	<div id="input">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>	
+	</div>	
+	<input type="button" id="btn" value="klik" />
+	<div id="output"> </div>
+    </body>
+</html>
+

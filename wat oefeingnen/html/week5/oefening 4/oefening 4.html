@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulieren: nieuwe elementen</title>
+		<link href="stijl.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h1>Gelieve dit formulier in te vullen</h1>
+		</header>
+		<div>
+			<form>
+				<label for="naam">Naam:</label>
+				<input type="text" name="Naam" />
+				<br />
+				<label for="voornaam">Voornaam:</label>
+				<input type="text" name="voornaam" />
+				<br />
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" placeholder="voornaam.naam@isp.be"/>
+				<br />
+				<label for="website">Website:</label>
+				<input type="url" name="website" placeholder="http://www.site.be" />
+				<br />
+				<label for="postnummer">Postnummer:</label>
+				<input type="nummer" name="postnummer" min="0000" max="9999" />
+				<br />
+				<label for="score">Score:</label>
+				<input type="range" name="postnummer" min="0" max="10"/>
+				<br />
+				<label for="zoeken">Zoeken:</label>
+				<input type="search" name="zoeken" />
+				<br />
+				<label for="Datum">Datum:</label>
+				<input type="date" name="datum" />
+				<br />
+				<label for="provincie">Provincie:</label>
+				<input type="text" name="provincie" />
+				<br />
+				<label for="kleur">Kleur:</label>
+				<input type="color" name="kleur" />
+				<br />
+				<input type="reset" value="Alles wissen" />
+				<input id="verzenden" type="submit" value="Verzenden" />
+			</form>
+		</div>
+	</body>
+</html>

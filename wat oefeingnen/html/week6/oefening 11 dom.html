@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body onload="popup()">
+<output id="output" ></output>
+<script>
+function popup(){
+var eigenschappen = "width=300, height=300, left=150";
+ nieuwVenster = window.open("", "info", eigenschappen, false);
+ var nieuweBody = nieuwVenster.document.getElementsByTagName("body")[0];
+ var title = document.createElement("p");
+ title.innerHTML = "Geef uw naam in:";
+ var paragraph = document.createElement("key");
+ paragraph.innerHTML = "Dit venster bevat allerhande info";
+ nieuweBody.appendChild(title);
+ nieuweBody.appendChild(paragraph);
+
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

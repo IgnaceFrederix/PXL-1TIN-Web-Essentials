@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Globale en lokale variabelen</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+    var getal1 = 5; // globale variabelen
+    var getal2 = 10;
+
+    function vermeningvuldig() {
+        var getal2 = 7; // lokale variabele
+        document.getElementById("output").innerText =
+            getal1 * getal2;
+    }
+
+    vermeningvuldig();
+</script>
+</body>
+</html>

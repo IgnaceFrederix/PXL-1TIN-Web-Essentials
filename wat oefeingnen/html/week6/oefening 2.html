@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body>
+<input type="text" id="vak1" value=""> 
+X
+<input type="text" id="vak2" value="">
+<input  type="button" id ="bereken" value ="Berekenen"></br>
+<input type="text" id="uitkomst" style="width: 450px; margin-top:10px;" >
+<output id="output"></output>
+<script>
+ 
+  document.getElementById("bereken").addEventListener("click", optellen);
+ function optellen() {
+ 
+ var getal1 = document.getElementById('vak1').value;
+ var getal2 = document.getElementById('vak2').value;
+ if(isNaN(getal1)==false && isNaN(getal2)==false) {
+ var boodschap = "Het product van ";
+ boodschap += getal1 + " en " + getal2 + " is ";
+ boodschap += getal1*getal2;  
+ }
+ }
+ 
+
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Default values</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+    function documentTitle(theTitle) {
+        return theTitle || "Untitled Document";
+    }
+    function isAdult(age) {
+        return age && (age > 17);
+        // Indien age als "false" geevalueerd wordt,
+        // wordt het argument age als resultaat teruggegeven.
+    }
+
+    var tekst = `documentTitle("") -> ${documentTitle('')}
+                 documentTitle("Testen") -> ${documentTitle("Testen")}
+                 isAdult("") -> ${isAdult("")}
+                 isAdult(NaN) -> ${isAdult(NaN)}
+                 isAdult(21) -> ${isAdult(21)}
+                 isAdult(7) -> ${isAdult(7)}`;
+
+    document.getElementById("output").innerText = tekst;
+</script>
+</body>
+</html>

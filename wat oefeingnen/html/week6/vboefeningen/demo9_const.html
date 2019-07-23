@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+    const MINUTES_IN_HOUR = 60;
+
+    //MINUTES_IN_HOUR = 40; //Uncaught TypeError: Assignment to constant variable.
+
+    function aantalMinuten(aantalUren) {
+       return aantalUren * MINUTES_IN_HOUR;
+    }
+
+    document.getElementById("output").innerText = "3 uur = " + aantalMinuten(3) + " min";
+</script>
+</body>
+</html>

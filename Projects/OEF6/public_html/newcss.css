@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-feb-2016, 14:00:00
+    Author     : Mijn PC
+*/
+
+body{
+    background-color: gray
+}
+
+h1{
+    font-size: 24pt;
+   color: white;
+   
+    font-family: Times;
+    
+}
+h2{
+    font-family: Times;
+    font-size: 18pt;
+    color: silver;
+}
+p{
+    font-family: arial;
+    font-size: 15pt;
+    line-height: 20pt;
+    margin-left: 1in;
+}

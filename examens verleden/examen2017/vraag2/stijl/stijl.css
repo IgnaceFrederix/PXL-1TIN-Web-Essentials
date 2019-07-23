@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav li a {
+    color: gray;
+
+}
+
+nav li a:nth-child(odd):hover {
+    color: crimson;
+}
+
+nav li a:nth-child(even):hover {
+    color: dodgerblue;
+}
+input[type="submit"]{
+    color:white;
+    background-color: dodgerblue;
+    border: solid 2px crimson;
+}

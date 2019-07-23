@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamische pagina's</title>
+</head>
+<body>
+<h1 id="dummy">Welkom op de site</h1>
+<p>Meer informatie, klik <a href="#dummy" id="linkOpen">hier</a>.</p>
+<p>Klik <a href="#dummy" id="linkSluit">hier</a> om het venster te sluiten.</p>
+<script>
+    "use strict";
+    document.getElementById("linkOpen").addEventListener("click", show);
+    document.getElementById("linkSluit").addEventListener("click", dispose);
+
+    var nieuwVenster;
+
+    function show() {
+        var eigenschappen = "width=300, height=300, left=150";
+        nieuwVenster = window.open("", "info", eigenschappen, false);
+        var nieuweBody = nieuwVenster.document.getElementsByTagName("body")[0];
+        var title = document.createElement("h1");
+        title.innerText = "Hallo!";
+        var paragraph = document.createElement("p");
+        paragraph.innerText = "Dit venster bevat allerhande info";
+        nieuweBody.appendChild(title);
+        nieuweBody.appendChild(paragraph);
+    }
+
+    function dispose() {
+        if (nieuwVenster) {
+            nieuwVenster.close();
+        }
+    }
+</script>
+</body>
+</html>

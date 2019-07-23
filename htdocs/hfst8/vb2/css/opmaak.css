@@ -1,0 +1,22 @@
+/* breedte div.tabel instellen: */
+div.tabel {width:400px;}
+
+
+/*
+	text-align: 		http://www.w3schools.com/cssref/pr_text_text-align.asp  
+	vertical-align: 	http://www.w3schools.com/cssref/pr_pos_vertical-align.asp
+	
+	display:		http://www.w3schools.com/cssref/pr_class_display.asp
+	inline-block voor layout:
+				http://www.ternstyle.us/blog/float-vs-inline-block 
+				http://stackoverflow.com/questions/6544852/ie7-does-not-understand-display-inline-block
+*/
+div.tabel div.invoer{ display: inline-block; width:60%; text-align:left; vertical-align:top;padding:1px; margin:1px;  }
+div.tabel div.titel{ display: inline-block; width:30%; text-align:right; vertical-align:top;padding:1px; margin:1px;  }
+div.tabel div.invoer input[type="text"], div.tabel div.invoer input[type="password"]{width:95%;}
+
+
+/*  http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/  */
+div.tabel div.invoer input[type="text"]{width:95%;}
+
+

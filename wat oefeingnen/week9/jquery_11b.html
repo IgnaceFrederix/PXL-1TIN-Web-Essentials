@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery - prevent2</title>
+    <style>
+        .leeg {
+            color: red;
+            background-color: yellow;
+        }
+
+        input {
+            color: black;
+            background-color: white;
+        }
+    </style>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input[type='submit']").click(function (event) {
+                $("span[class='foutmelding']").remove;
+                var fout = false;
+                $("input[type='text']").each(function () {
+                    if ($(this).empty() && $(this).val().trim() === "") {
+                        var span = $("<span>")
+                            .css("color", "red")
+                            .attr("class", "foutmelding")
+                            .append("geef een waarde in");
+                        $(this).after(span);
+                        fout = true;
+                    }
+                });
+                if (fout) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form action="verwerk.php" method="get">
+    <label for id="naam">Naam:</label><input type="text" name="naam"/><br/>
+    <label for id="voornaam">Voornaam:</label><input type="text" name="voornaam"/><br/>
+    <input type="submit" value="Verzenden"/>
+</form>
+</body>
+</html>

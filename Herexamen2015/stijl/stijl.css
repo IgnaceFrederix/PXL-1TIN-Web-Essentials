@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4f81bd;
+}
+
+#container {
+    left: 25%;
+    right: 25%;
+    width: 800px;
+    background-image: url(../figuren/pukkelpop.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#header {
+    margin: 10px;
+    height: 150px;
+    background-image: url(../figuren/logo.gif);
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px grey;
+    background-color: #f0fbfd;
+    top: 10px;
+}
+
+nav {
+    width: 160px;
+    height: 320px;
+}
+
+.aside {
+    float: left;
+    margin: 10px;
+    width: 160px;
+}
+
+.content {
+    float: left;
+    margin: 10px;
+    width: 600px;
+}
+
+.opmaak {
+    margin: 10px;
+    background-color: #f0fbfd;
+    /*hier moet je de achtergrond transparant maken, ik weet niet meer hoe*/
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 10px;
+}
+
+.content > .opmaak {
+    float: left;
+    width: 275px;
+    height: 275px;
+}
+
+span {
+    font-size: 20pt;
+}
+
+nav li {
+    padding: 2px 5px;
+    list-style: none;
+    text-align: left;
+}
+nav li a {
+    display: inline-block;
+    width: 65px;
+    text-decoration: none;
+    color: gray;
+}
+nav li a:hover {
+    background-color: gray;
+    width: 100%;
+    color: white;
+}
+
+
+
+header {
+    background-color: #999;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+p {
+    margin: 2px 0px 2px 10px;
+}
+
+section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+section article {
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+aside {
+    position: relative;
+    clear:both;
+    width: 160px;
+    height: 320px;
+}
+
+th {
+    background-color: grey;
+}
+
+table {
+    border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: blue;
+}
+tr:nth-child(even) {
+    background: green;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: black;
+    height: auto;
+    width: 780px;
+}

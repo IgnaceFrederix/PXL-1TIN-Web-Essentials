@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery voorbeeld 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input {
+            margin: 2px;
+        }
+    </style>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                var tekst = $(":text").val();
+                $("input#input").val("");
+                $("input#output").val(tekst);
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" id="input"/>
+</div>
+<div>
+    <input type="text" id="output"/>
+    <input type="button" id="btn" value="klik"/>
+</div>
+</body>
+</html>
+

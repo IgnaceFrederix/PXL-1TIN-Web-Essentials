@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */ 
+
+#WindowDiv
+{
+    width: 800px;
+    background-image: url(../figuren/pukkelpop.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1000px;
+}
+
+#logoWindow
+{
+    background-image: url(../figuren/logo.gif);
+    height: 150px;
+    border: 2pt;
+    border-radius: 10pt;
+    background-repeat: no-repeat;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
+#NavDiv
+{
+
+}
+
+#DivLeft
+{
+    float: left;
+}
+
+#ReclameDiv
+{
+    
+}
+
+#MeerInfoDiv
+{
+    width: 220px;
+    float: left;
+    border: 2pt;
+    border-radius: 10pt;
+    border-color: black;
+    border-style: solid;
+    background-color: lightgrey;
+    height: 250px;
+}
+
+#MeerInfoParagraaf
+{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    background-color: grey;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+#aInfo
+{
+    margin-left: 10px;
+}
+
+a:hover
+{
+    background-color: grey;
+    color: white;
+}
+
+a
+{
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+#divCenter
+{
+ float: none;
+}
+
+#DivRight
+{
+    float: right;
+}
+
+#ProgrammaDiv
+{
+    width: 330px;
+    float: left;
+    border: 2pt;
+    border-radius: 10pt;
+    border-color: black;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: lightgrey;
+    height: 200px;  
+}
+
+#ArtiestDiv
+{
+    width: 220px;
+    float: left;
+    border: 2pt;
+    border-radius: 10pt;
+    border-color: black;
+    border-style: solid;
+    background-color: lightgrey;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+table{
+    border-style: solid;
+    width: 300px;
+}
+
+#treen{
+    background-color: blue;
+}
+
+#trTwee{
+    background-color: green;
+}
+
+#tdEerst{
+    width: 150px;
+}
+
+#tdTwee
+{
+    width: 75px;
+    text-align: left;
+}
+
+#MiddenArtiest
+{
+    margin-top: 75px;
+    width: 330px;
+    float: left;
+    border: 2pt;
+    border-radius: 10pt;
+    border-color: black;
+    border-style: solid;
+    margin-right: 5px;
+    background-color: lightgrey;
+    height: 200px;
+}
+
+#MiddenArtiest2
+{
+    margin-top: 5px;
+    width: 330px;
+    float: left;
+    border: 2pt;
+    border-radius: 10pt;
+    border-color: black;
+    border-style: solid;
+    margin-right: 5px;
+    background-color: lightgrey;
+    height: 200px;
+}
+
+footer
+{
+                width: 800px;
+                height: 20px;
+                text-align: center;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                float: left;
+                clear: both;
+                border-radius: 10pt;
+                border-color: black;
+                border-style: solid;
+                
+                
+}

@@ -1,0 +1,22 @@
+.hoogste {
+	color: hsl(20, 88%, 33%);
+	font-size: 15pt;
+}
+
+.subitem {
+	font-size: 12pt;
+	color: hsl(14, 62%, 50%);
+	list-style-image: url(afbeeldingen/vak.gif);
+}
+
+.subsubitem {
+	font-size: 10pt;
+	color: hsl(33, 0%, 33%);
+	list-style-image: url(afbeeldingen/lector.gif);
+}
+
+.content {
+	font-size: 8pt;
+	color: hsl(33, 0%, 33%);
+	list-style-type: circle;
+}

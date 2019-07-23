@@ -1,0 +1,18 @@
+h2 {
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+	min-width: 150px;
+}
+
+#opmerkingen {
+	position: relative;
+	bottom: 50px;
+}
+
+#wissen {
+	position: relative;
+	left: 6px;
+}

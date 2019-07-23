@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Examen 2013-2014: Vraag 2</title>
+
+    <!-- link met css weggehaald omdat dit de opmaak overnam van vraag 1-->
+    <link href="#" rel="stylesheet" type="text/css" />
+    <script src="script/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var checkName = false;
+        var checkDate = false;
+
+        function valideerNaam() {
+            var invoer = document.getElementById("naam").value;
+            var naam = document.getElementById("naam");
+            var error = document.getElementById("error");
+            if (invoer == "" || invoer == null) {
+                error.innerHTML = "Naam moet ingevuld!!";
+                error.style.color = "red";
+                makeRedWhite(naam);
+            } else {
+                error.innerHTML = "";
+                makeGreenBlack(naam);
+                checkName = true;
+            }
+
+            var datum = document.getElementById("datum");
+            datum.empty(); //dit zou het datumveld terug op 'default' moeten plaatsen
+        }
+
+        //datum controleren
+        function valideerDatum() {
+            var datum = document.getElementById("datum");
+            var dag = datum.getDay();
+            var maand = datum.getMonth();
+            var jaar = datum.getYear();
+
+            var error = document.getElementById("error");
+
+            if (dag > 0 && maand > 0 && jaar > 0) {
+                checkDate = true;
+                error.innerHTML = "";
+                makeGreenBlack(datum);
+            } else {
+                error.innerHTML = "Datum niet correct";
+                makeRedWhite(datum);
+            }
+        }
+
+        function makeRedWhite(veld) {
+            veld.style.backgroundColor = "red";
+            veld.style.color = "white";
+        }
+
+        function makeGreenBlack(veld) {
+            veld.style.backgroundColor = "green";
+            veld.style.color = "black";
+        }
+
+        function checkForm() {
+            if (checkName == true && checkDate == true) {
+                alert("test");
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+<form>
+    <fieldset>
+        <legend>Check datum</legend>
+        <table>
+            <tr>
+                <td><label for="error">Error: </label></td><td id="error"></td>
+            </tr>
+            <tr>
+                <td><label for="naam">Naam : </label></td><td><input id="naam" type="text" onchange="valideerNaam();" /></td>
+            </tr>
+            <tr>
+                <td>Geboortedatum : </td><td><input id="datum" type="date" onchange="valideerDatum()" /></td>
+            </tr>
+        </table>
+        <button type="button" id="knop" onclick="checkForm()">Registreer</button>
+    </fieldset>
+
+</form>
+
+
+</body>
+</html>

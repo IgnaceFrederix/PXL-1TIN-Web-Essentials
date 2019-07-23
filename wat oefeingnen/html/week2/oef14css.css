@@ -1,0 +1,35 @@
+h1 {
+	font-family:Times;
+	font-size: 24pt;
+	color:#ffff99;
+}
+h2{
+	font-family:Times;
+	font-size: 18pt;
+	color:#ffff99;
+}
+p{
+	font-family:Arial;
+	text-align:center;
+	margin-top:5px;
+}
+body{
+	background-color:#cc3300;
+}
+section{
+	border:1px solid #ffff99;
+}
+li{
+	color:yellow;
+}
+#rondje{
+	list-style:disc;
+	
+}
+#foto{
+	float:right;
+	
+}
+#wijdte{
+	float:left;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=“nl”>
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 14: DOM</title>
+</head>
+<body>
+<form id="myForm"
+      action="mailto:nele.custers@pxl.be?subject=myAnswer"
+      enctype="text/plain" method="post">
+    <label for="naam">Naam:</label>
+    <input type="text" id="naam" name="naam" />
+    <fieldset id="vraag1">
+        <legend>Inside which HTML element do we put the JavaScript?</legend>
+        <input type="radio" name="scriptTag" value="js" id="js"/>
+        <label for="js">&lt;js&gt;</label>
+        <input type="radio" name="scriptTag" value="script" id="script"/>
+        <label for="script">&lt;script&gt;</label>
+        <input type="radio" name="scriptTag" value="javascript"
+               id="javascript"/>
+        <label for="javascript">&lt;javascript&gt;</label>
+        <input type="radio" name="scriptTag" value="code" id="code"/>
+        <label for="code">&lt;code&gt;</label>
+    </fieldset>
+</form>
+<ul class="hinder">
+    <li>Weet je het antwoord al?</li>
+</ul>
+<script>
+    (function() {
+        var scriptTags = document.getElementsByName("scriptTag");
+        for (let counter = 0; counter < scriptTags.length; counter++){
+            scriptTags.item(counter).value = "code";
+        }
+    }());
+    var scriptTagsVerdwijn = function() {
+        var scriptTags = document.getElementsByName("scriptTag");
+        for (let counter = 0; counter < scriptTags.length; counter++){
+            scriptTags.item(counter).style.visibility = "hidden";
+        }
+    }
+    var submitForm = function() {
+        document.getElementById("myForm").submit();
+    }
+    var hinder = function() {
+        var newElement = document.createElement("li");
+        var hinderLijst = document.getElementsByClassName("hinder")[0];
+        hinderLijst.appendChild(newElement);
+        hinderLijst.lastChild.innerText = "Weet je het al?";
+    }
+    setTimeout(scriptTagsVerdwijn, 9000);
+    setTimeout(submitForm, 6000);
+    setInterval(hinder, 1000);
+</script>
+</body>
+</html>

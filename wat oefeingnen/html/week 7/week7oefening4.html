@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tafels</h1><br>
+<input type ="number" id="ingave">
+<input type="button" value = "Genereer tafel" id="buton">
+<input type="button" value="Toon de output" id="buton2"><br>
+<p id="uitput"></p>
+</body>
+<script>
+    document.getElementById("buton").addEventListener("click",GenTafel);
+    document.getElementById("buton2").addEventListener("click",ToonTafel);
+
+    function GenTafel(){
+
+        var uitkomst ="";
+        var nummer = document.getElementById('ingave').value;
+        if(nummer % 1 == 0) {
+            for (var i = 1; i < 11; i++) {
+                uitkomst += nummer + " X " + i + " = " + nummer * i + "<br>";
+            }
+            document.getElementById("uitput").innerHTML = uitkomst;
+            document.getElementById("uitput").style.visibility = "hidden";
+        }
+    }
+    function ToonTafel() {
+        document.getElementById("uitput").style.visibility = "visible";
+    }
+</script>
+</html>

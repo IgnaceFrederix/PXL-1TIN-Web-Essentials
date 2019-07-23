@@ -1,0 +1,31 @@
+body {
+	background-color: #C2D6D6;
+}
+
+.achterground-bruin {
+	background-color: #756B57;
+}
+
+h2 {
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+	min-width: 150px;
+}
+
+#opmerkingen {
+	position: relative;
+	bottom: 50px;
+}
+
+#wissen {
+	position: relative;
+	left: 6px;
+}
+
+.knoppen {
+	background-color: #756B57;
+	color: white;
+}

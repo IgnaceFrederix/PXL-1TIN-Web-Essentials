@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Geef een getal tussen 2 en 10 :
+<input type="text" id="waarde" value="">
+<input type="button" id ="druk" value ="Teken pyramide"><br>
+<p id="output"></p>
+<script>
+    document.getElementById("druk").addEventListener("click",lus);
+    function lus(){
+        var aantal = document.getElementById('waarde').value;
+        var uitkomst ="";
+        for(var i = 1;i <= aantal;i++ ){
+           for(var j = 1;j <=i;j++) {
+               uitkomst += "*";
+           }
+            uitkomst += "<br>";
+
+        }
+        document.getElementById("output").innerHTML = uitkomst;
+
+    }
+
+</script>
+</body>
+</html>

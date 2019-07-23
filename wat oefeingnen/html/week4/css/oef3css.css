@@ -1,0 +1,17 @@
+.icoon{
+	background-color:#c2cad6;
+	max-width:30%;
+	min-width:15%;
+	height:200px;
+	border-radius:5px 5px 5px 5px;
+	text-align:center;
+	margin:5px 5px 5px 5px;
+	float:left;
+}
+.1stvier{
+	top:5px;
+}
+.2devier{
+	position:absolute;
+	top:1000px;
+}

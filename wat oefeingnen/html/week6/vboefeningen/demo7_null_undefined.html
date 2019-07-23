@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Null en undefined</title>
+</head>
+<body>
+<output id="outputCirkel1"></output><br/>
+<output id="outputCirkel2"></output>
+<script>
+    "use strict";
+    var straalCirkel1;
+    var omtrekCirkel1 = straalCirkel1 * 2 * Math.PI;
+    document.getElementById("outputCirkel1").innerText =
+        "De omtrek van een cirkel met straal " + straalCirkel1 +
+        " is " + omtrekCirkel1;
+    var straalCirkel2 = null;
+    var omtrekCirkel2 = straalCirkel2 * 2 * Math.PI;
+    document.getElementById("outputCirkel2").innerText =
+        "De omtrek van een cirkel met straal " + straalCirkel2 +
+        " is " + omtrekCirkel2;
+</script>
+</body>
+</html>

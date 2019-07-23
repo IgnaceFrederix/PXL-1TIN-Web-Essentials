@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Examen 2013-2014: Vraag 2</title>
+        <script type="text/javascript" src="jquery-2.1.3.js"></script>
+        <style type="text/css">
+            select {
+                width: 173px;
+            }
+            p {
+                margin-top: 0px;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="" >
+            <fieldset>
+                <legend>Opname geld rekening</legend>
+                <p>Rekeningnummer : 001-000001-01</p>
+                <table>
+                    <tr>
+                        <td><label for="naamText">Naam :</label></td>
+                        <td><input type="text" id="naamText" name="naamText"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="naamText">Categorie : </label></td>
+                        <td>
+                            <select name="lftSelect" id="lftSelect">
+                                <option value="25">18 jaar t.e.em. 25 jaar</option>
+                                <option value="200">25 jaar en ouder</option>
+                            </select> Leeftijd
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="opnameText">Opname : </label></td>
+                        <td><input type="text" id="opnameText" name="opnameText"> Euro</td>
+                    </tr>
+                    <tr>
+                        <td><label for="saldoText">Saldo : </label></td>
+                        <td><input type="number" id="saldoNumber" name="saldoText" value="150"> Euro</td>
+                    </tr>
+
+                </table>
+                <input type="submit" name="okButton" id="registerButton" value="Register">
+
+            </fieldset>
+            <script type="text/javascript">
+                $saldo = 150;
+                $(document).ready(function () {
+                    $("#registerButton").click(function () {
+                        //$ok = $("#aantalInput").val();
+                        $minSaldo = parseInt(document.getElementById('saldoNumber').value);
+                        if ($(":text").val === "" || $(":text").val === null) {
+                            alert("error");
+                            (this).after("FOUT");
+                            event.preventDefault();
+                        } else {
+                            if ($("#lftSelect").val === 18) {
+                            $check = $saldo - $minSaldo;
+                            if ($check >= 0 || $minSaldo < 100) {
+                                alert("geld 18 tot 25; Saldo:  " + $check);
+                            } else {
+                               ("Er mag niet " + $minSaldo + ", worden afgeschreven!");
+                                event.preventDefault();
+                            }
+                        }
+                        else {
+                            $check = $saldo - $minSaldo;
+                            if ($check >= -50 && $minSaldo < 150) {
+                                alert("geld 25 jaar ouder; Saldo: " + $check);
+                            } else {
+                                alert("Er mag niet " + $minSaldo + ", worden afgeschreven!");
+                                event.preventDefault();
+                            }
+                        }
+                                                                   }
+
+                    });
+                    $(":text").change(function () {
+                        if ($(this).val() === "" || $(this).val() === null) {
+                            $(this).css("background-color", "red");
+                            $(this).css("color", "black");
+                        }
+                        else {
+                            $(this).css("background-color", "green");
+                            $(this).css("color", "white");
+                        }
+                    });
+                    $(":number").change(function () {
+
+                        if ($(this).val() || $(this).val() === null) {
+                            $(this).css("background-color", "red");
+                            $(this).css("color", "black");
+                        }
+                        else {
+                            $(this).css("background-color", "green");
+                            $(this).css("color", "white");
+                        }
+                    });
+                });
+            </script>
+        </form>
+    </body>
+</html>

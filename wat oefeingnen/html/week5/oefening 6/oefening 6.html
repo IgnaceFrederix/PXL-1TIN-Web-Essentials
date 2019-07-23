@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>oefening 6</title>
+		<link href="oefening%206.css" rel="stylesheet" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Persoonlijke gegevens</legend>
+				<div class="inspringen">
+				<label for="naam">Naam:</label>
+				<input type="text" name="Naam" />
+				<br />
+				<label for="Voornaam">Voornaam:</label>
+				<input type="text" name="voornaam" />
+				<br />
+				<label for="Straat">Straat:</label>
+				<input type="text" name="Straat" />
+				<br />
+				<label for="nummer">Nummer:</label>
+				<input type="number" name="Nummer" />
+				<br />
+				<label for="Posnummer">Postnummer:</label>
+				<input type="number" name="Postnummer" />
+				<br />
+				<label for="Gemeente">Gemeente:</label>
+				<input type="text" name="Gemeente" />
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Contactgegevens</legend>
+				<fieldset class="inspringen">
+					<legend>Hoe kunnen we je contacteren?</legend>
+					<input type="radio" name="Contacteren" value="E-mail" />
+					<label for="E-mail">E-mail</label>
+					<input type="radio" name="Contacteren" value="Mobiel" />
+					<label for="Mobiel">Mobiel</label>
+				</fieldset>
+				<label for="Email" class="inspringen">E-mail:</label>
+				<input type="email" name="E-mail"/>
+				<br />
+				<label for="mobiel nummer" class="inspringen">Mobiel nummer:</label>
+				<input type="number" name="Mobiel nummer"/>
+			</fieldset>
+			<fieldset>
+				<legend>Vraag</legend>
+				<div class="inspringen">
+				<input type="checkbox" name="Contacteer" value="Contacteer me voor verdere uitleg" />
+				<label for="Contacteer">Contacteer me voor verdere uitleg</label>
+				<br />
+				<input type="checkbox" name="Brochure" value="Stuur me een brochure" />
+				<label for="Brochure">Stuur me een brochure</label>
+				<br />
+				<input type="checkbox" name="Offerte" value="Stuur me een offerte" />
+				<label for="offerte">Stuur me een offerte</label>
+				</div>
+			</fieldset>
+				<input type="reset" value="Alles wissen" name="wissen" id="knoppenwis"/>
+				<input type="submit" value="Verzenden" name="verzenden" id="knopverzend"/>
+		</form>
+	</body>
+</html>

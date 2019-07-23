@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery - event.preventDefault</title>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function (event) {
+                event.preventDefault();
+                $("<div>")
+                    .append("default " + event.type + " prevented")
+                    .appendTo("#log");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<a href="http://jquery.com">default click action is prevented</a>
+<div id="log"></div>
+
+
+</body>
+</html>

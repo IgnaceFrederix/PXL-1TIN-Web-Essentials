@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+    <style type="text/css">
+        body{
+            background-color: aliceblue;
+        }
+
+        table{
+            border: 2px solid black;
+        }
+        th.zwart{
+            background-color: black;
+            color: white;
+        }
+        .center {
+            text-align: center;
+        }
+        td.rechts {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="mailto:joren.martens135@gmail.com" enctype="text/plain">
+    <table>
+        <tr>
+            <th class="zwart center" colspan="3">Beoordeling</th>
+        </tr>
+        <tr>
+            <td rowspan="6"><img src="img/logo.jpg" alt=""/></td>
+            <td class="center" colspan="2">Web Essentials</td>
+        </tr>
+        <tr>
+            <td>Onderdeel</td>
+            <td>Beoordeling</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>
+                <select name="html">
+                    <option value="goed">Goed</option>
+                    <option value="matig">Matig</option>
+                    <option value="slecht">Slecht</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>
+                <select name="css">
+                    <option value="goed">Goed</option>
+                    <option value="matig">Matig</option>
+                    <option value="slecht">Slecht</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Javascript</td>
+            <td>
+                <select name="javascript">
+                    <option value="goed">Goed</option>
+                    <option value="matig">Matig</option>
+                    <option value="slecht">Slecht</option>
+                </select>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td class="rechts">Username:</td>
+            <td><input type="text" name="" id="username"/></td>
+            <td><input type="reset" value="Wis alles"/></td>
+        </tr>
+        <tr>
+            <td class="rechts">Password:</td>
+            <td><input type="password" id="password"/></td>
+            <td><input type="submit" value="Verzenden"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

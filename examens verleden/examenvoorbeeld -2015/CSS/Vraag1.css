@@ -1,0 +1,107 @@
+﻿body {
+    position:relative;
+    float:left;
+    background-color:black;
+    width: 1000px;
+    height: 600px;
+    bottom: -30px;
+    right: -30px;
+}
+
+.MakeColumnSameHeight
+{
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+}
+
+#central
+{
+    float:left;
+    overflow: hidden;
+}
+#TitelAfbeeldingen
+{
+    float:left;
+    color: gray;
+    text-align:center;
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+
+#Links
+{    
+    width: 30%;
+    float:left;
+    padding-left: 2px;
+    
+    
+}
+#ImageList
+{
+    float:left;
+    list-style : none;
+    
+    padding: 2px;
+}
+#ImageList li
+{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    float:left;
+}
+
+#ImageList img
+{
+    width:80%;
+}
+
+
+#Rechts
+{
+    float: left;
+    width:68%;
+    background: url('../figuren/10000bc.jpg') no-repeat;
+    background-size: contain;
+
+    
+    text-align: center;
+    font-size:32pt;
+    font-family:Arial;
+    text-shadow: 3px 3px 4px black;
+    padding-top: 2em;
+}
+
+#nav
+{
+    clear: both;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+}
+
+nav div {
+    background: url('../figuren/knop.jpg') no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    padding: 0.25em 2.5em;
+    margin-left: 1em;
+    border-radius:20px;
+    width:10%;
+    text-align: center;
+    color: gray;
+}
+
+    .menuItem:hover {
+        
+        
+        background: url('../figuren/knop2.jpg') no-repeat;
+        background-size: 100% 100%;
+       
+    }
+
+    nav div a
+    {
+        color: gray; 
+        text-decoration:none;
+    }

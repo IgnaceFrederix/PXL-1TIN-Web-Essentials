@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            var i = 0;
+            var pics = ["./images/numbers_1.png", "./images/numbers_2.png", "./images/numbers_3.png", "./images/numbers_4.png", "./images/numbers_5.png", "./images/numbers_6.png", "./images/numbers_7.png"];
+            $("#image").attr('src',"./images/numbers_1.png");
+            $("#vorige").click(function (){
+                $("#image").fadeOut();
+                $('#clack').innerText = "clicked";
+                if(i == 0){
+                    i = 6;
+                    $("#image").attr('src',pics[i]);
+                }else {
+                    i -= 1;
+                    $("#image").attr('src',pics[i]);
+                }
+                $("#image").fadeIn();
+
+            });
+            $("#volgende").click(function (){
+                $("#image").fadeOut();
+                $('#clack').innerText = "clicked";
+                if(i == 6){
+                    i = 0;
+                    $("#image").attr('src',pics[i]);
+                }else {
+                    i += 1;
+                    $("#image").attr('src',pics[i]);
+                }
+                $("#image").fadeIn();
+
+            });
+            });
+    </script>
+</head>
+<body>
+<img  width="300px" height="400px" id="image"><br>
+<input type="button" id="vorige" value="Vorige">
+<input type="button" id="volgende" value="Volgende">
+<p id="clack"></p>
+</body>
+</html>

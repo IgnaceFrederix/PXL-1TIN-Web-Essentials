@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo12: functie return functie</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    (function () {
+        "use strict";
+        var btw = function (procent) {
+            return function (bedrag) {
+                return bedrag * (1 + procent / 100);
+            };
+        };
+
+        var btwEenEnTwintig = btw(21);
+        var btwZes = btw(6);
+
+        document.getElementById("output").innerText = btwEenEnTwintig(120) + " " + btwZes(120);
+    })();
+</script>
+</body>
+</html>

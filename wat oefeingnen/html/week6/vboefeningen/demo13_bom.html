@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo: BOM</title>
+    <script>
+        "use strict";
+        var x = 120;
+
+        var isEven = function(waarde) {
+            return waarde && waarde % 2 == 0;
+        };
+    </script>
+</head>
+<body>
+<output id="output"></output>
+
+<script>
+    "use strict";
+    var info = "x=" + window.x + " of " + x + "\n";
+    info += "isEven(window.x)=" + window.isEven(x) + "\n";
+    info += "afmetingen browserscherm (px)= " + window.innerHeight + " X " + window.innerWidth + "\n";
+    info += "url=" + window.location.href + "\n";
+    info += "os=" + navigator.platform + "\n";
+
+    document.getElementById("output").innerText = info;
+</script>
+</body>
+</html>

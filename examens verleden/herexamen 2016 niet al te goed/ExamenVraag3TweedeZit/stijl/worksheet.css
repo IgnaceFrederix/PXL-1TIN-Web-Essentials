@@ -1,0 +1,13 @@
+tr.groen{
+    background-color: green; 
+}
+tr.zwart{
+    background-color: black;
+    
+}
+tr.rood{
+    background-color: red;
+}
+body{
+    width: 500px;
+}

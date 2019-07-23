@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mei-2016, 14:42:09
+    Author     : Mijn PC
+*/
+
+body{
+    background-color: black;
+    height: 600px;
+    width: 1000px;
+    float: right;
+    
+    
+}
+
+
+    #kleine{
+    height: 110px;
+    width: 180px;
+    padding: 5px;
+    
+    }
+    #groot{
+     height: 600px;
+    width: 800px;
+    float: right;
+      
+    
+}
+
+h1{
+    color: graytext;
+     position: relative;
+    left: 30px;
+}
+#vraag1{
+   position: relative;
+    left:  240px;
+    top:  110px;
+    font-size:   30pt;
+   text-shadow: 1px 4px gray;
+   font-family: Arial;
+}
+a{
+    color: graytext;
+    float: left;
+    margin-left: 10px;
+    width: 190px;
+   background-image: url('knop.jpg');
+    background-repeat: repeat-x;
+    text-align: center;
+     text-decoration: underline;
+}
+a:hover {
+     background-image: url('knop2.jpg');
+     text-decoration: none;
+    
+}
+footer{
+    float: bottom;
+    bottom: 5px;
+}
+fieldset{
+    color: white;
+}
+#vraag2{
+     position: relative;
+    left: 420px;
+    top:  110px;
+    font-size:   30pt;
+   text-shadow: 1px 4px gray;
+   font-family: Arial;
+   
+}

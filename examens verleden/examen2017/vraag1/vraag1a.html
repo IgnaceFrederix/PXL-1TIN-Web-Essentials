@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Vraag 1a</title>
+    <link href="stijl/stijl.css" rel="stylesheet"/>
+    <script>
+        window.addEventListener('load', initialise);
+        var showSunrise = true;
+        function initialise() {
+            document.getElementById("img").addEventListener("click", swapImg);
+        }
+
+
+        function swapImg() {
+            if (showSunrise) {
+                showSunrise = false;
+                document.getElementById("img").setAttribute("src", "figuren/passion_sunrise.jpg");
+            } else {
+                document.getElementById("img").setAttribute("src", "figuren/roze_bubbels.jpg");
+                showSunrise = true;
+            }
+
+
+        }
+    </script>
+
+</head>
+<body>
+<header class="wrapper">
+    <h1>Mocktails 2017</h1>
+    <nav>
+        <ul>
+            <li><a href="#recept">Op basis van grenadine</a></li>
+            <li><a href="vraag1b.html">Informatie</a></li>
+            <li><a href="vraag1c.html">Bestellen</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="wrapper">
+    <h2>Passion sunrise</h2>
+    <section>
+        <article>
+            <h3>Ingrediënten</h3>
+            <ul>
+                <li>Groenten / Fruit
+                    <ul>
+                        <li>0.5 passievrucht</li>
+                    </ul>
+                </li>
+
+                <li>Vloeistoffen
+                    <ul>
+                        <li>2 eetl. grenadine</li>
+                        <li>20 cl sinaasappellimonade</li>
+                    </ul>
+                </li>
+                <li>1 ijsblokje</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Bereiding 5 min</h3>
+
+            <ol>
+                <li>Doe het ijsblokje en het vruchtvlees van de halve passievrucht in een longdrinkglas.
+                <li>Voeg de grenadine toe.
+                <li>Giet er daarna de sinaasappellimonade langs de bolle kant van een lepel bij
+                <li>voor een mooi kleureffect.
+            </ol>
+        </article>
+    </section>
+    <section>
+        <aside id="recept">
+            <img src="figuren/passion_sunrise.jpg" id="img">
+        </aside>
+    </section>
+
+</main>
+</body>
+</html>

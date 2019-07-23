@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #i3,#i5,#i7{
+        float:left;
+        width:600px;
+        height:300px;
+    }
+    #i3{
+        float:left;
+        margin-left:40px;
+        margin-right:15px;
+    }
+    #i7{
+        margin-left:15px;
+
+    }
+
+</style>
+<body>
+<h1 style="font-size:40px;">Sandy Bridge MicroArchitectuur</h1><br>
+Beweeg over de logos om de processor te zien<br>
+<p style="text-align: center">Gekozen processor =</p>
+
+<img  src="images/core_i3_logo.gif" id="i3">
+<img onmouseover="Showi5()"src="images/core_i5_logo.gif" id="i5">
+<img onmouseover="Showi7()"src="images/core_i7_logo.gif" id="i7">
+<script>
+    document.getElementById("i3").addEventListener("mouseover",Showi3);
+    document.getElementById("i3").addEventListener("mouseout",Out);
+    document.getElementById("i5").addEventListener("mouseover",Showi5);
+    document.getElementById("i5").addEventListener("mouseout",Out);
+    document.getElementById("i7").addEventListener("mouseover",Showi7);
+    document.getElementById("i7").addEventListener("mouseout",Out);
+    function Showi3() {
+        document.getElementById("i3").src = "images/core_i3.jpg";
+    }
+    function Showi5() {
+        document.getElementById("i5").src = "images/core_i5.jpg";
+    }
+
+    function Showi7() {
+        document.getElementById("i7").src = "images/core_i7.jpg";
+    }
+    function Out() {
+        document.getElementById("i3").src = "images/core_i3_logo.gif";
+        document.getElementById("i5").src = "images/core_i5_logo.gif";
+        document.getElementById("i7").src = "images/core_i7_logo.gif";
+    }
+
+
+</script>
+</body>
+</html>

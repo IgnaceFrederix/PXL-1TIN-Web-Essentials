@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #vorig,#volgend,#vooruit,#stop{
+        width:125px;
+        height:125px;
+        margin-left:10px;
+    }
+    #foto{
+        width:500px;
+        height:350px;
+    }
+</style>
+<body>
+<h1>De zelfmoordkonijntjes</h1><br>
+<img src="images/konijn-0.jpg" id="foto" border="20">
+<br>
+<img src="images/vorig.png" id="vorig">
+<img src="images/volgend.png" id="volgend">
+<img src="images/vooruit.png" id="vooruit">
+<img src="images/stop.png" id="stop">
+<p id="bekijk">1 van de 20</p>
+
+<script>
+    var konijnen = ["images/konijn-0.jpg","images/konijn-1.jpg","images/konijn-2.jpg","images/konijn-3.jpg","images/konijn-4.jpg",
+        "images/konijn-5.jpg", "images/konijn-6.jpg", "images/konijn-7.jpg", "images/konijn-8.jpg", "images/konijn-9.jpg",
+        "images/konijn-10.jpg", "images/konijn-11.jpg", "images/konijn-12.jpg", "images/konijn-13.jpg", "images/konijn-14.jpg",
+        "images/konijn-15.jpg", "images/konijn-16.jpg", "images/konijn-17.jpg", "images/konijn-18.jpg", "images/konijn-19.jpg"];
+    var teller = 0;
+    var myVar;
+    document.getElementById("volgend").addEventListener("click",Volgende);
+    document.getElementById("vorig").addEventListener("click",Vorige);
+    document.getElementById("vooruit").addEventListener("click",Vooruit);
+    document.getElementById("stop").addEventListener("click",Stop);
+
+    function Volgende() {
+        teller += 1;
+        if(teller == 20){
+            teller = 0;
+        }
+        document.getElementById("foto").src = konijnen[teller];
+        Bekijkend();
+    }
+    function Vorige(){
+        teller -= 1;
+        if(teller == -1){
+            teller = 19;
+        }
+        document.getElementById("foto").src = konijnen[teller];
+        Bekijkend();
+    }
+    function Bekijkend (){
+        document.getElementById("bekijk").innerHTML = teller + 1  + " van de 20 ";
+    }
+    function Vooruit(){
+       myVar = setInterval(Volgende,1000);
+    }
+    function Stop(){
+        clearInterval(myVar);
+    }
+</script>
+</body>
+</html>

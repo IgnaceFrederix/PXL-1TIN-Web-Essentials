@@ -1,0 +1,10 @@
+label {
+	display: inline-block;
+	min-width: 100px;
+	margin-bottom: 5px;
+}
+
+#verzenden {
+	position: relative;
+	left: 72px;
+}

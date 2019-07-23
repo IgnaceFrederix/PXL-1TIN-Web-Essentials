@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo10: nested functions</title>
+</head>
+<body>
+<output id="output"></output>
+<script>
+    "use strict";
+    var landscape = function () {
+        var result = "";
+        var flat = function (size) {
+            for (var count = 0; count < size; count++)
+                result += "_";
+        };
+        var mountain = function (size) {
+            result += "/";
+            for (var count = 0; count < size; count++)
+                result += "'";
+            result += "\\";
+        };
+
+        flat(3);
+        mountain(4);
+        flat(6);
+        mountain(1);
+        flat(1);
+        return result;
+    };
+
+    document.getElementById("output").innerText = landscape();
+</script>
+</body>
+</html>

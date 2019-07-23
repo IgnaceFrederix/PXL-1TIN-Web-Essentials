@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Aftellen naar je verjaardag!</h1>
+<output id="output"></output>
+<script>
+    'use strict';
+    window.addEventListener('load',dagvanjaar);
+
+    function dagvanjaar() {
+        var d = new Date();
+        var verjaardag = new Date(2017,9,9);
+        var dagen = Math.round((verjaardag - d)/1000/60/60/24);
+
+        document.getElementById("output").value ="Nog " + dagen + " dagen tot je verjaardag!";
+
+
+    }
+</script>
+</body>
+</html>

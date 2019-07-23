@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tabelGen').click(function(){
+                var kolom = $("kolommen").val();
+                var rij = $("rijen").val();
+                $("test").text = kolom;
+                var $tabel = "";
+                $tabel.append("<table>");
+                for(i=0;i < rij;i++){
+                    $tabel.append("<tr>");
+                    for(j=0;j<kolom;j++){
+                        $tabel.append("<td>tekst</td>");
+                    }
+                    $tabel.append("</tr>");
+                }
+                $tabel.append("</tabel>");
+                $tabel.appendTo("#uitvoer");
+            });
+        });
+    </script>
+</head>
+
+<body>
+<p id="test"></p>
+Rijen =
+<input type="text" id="rijen"><br>
+Kolommen
+<input type="text" id="kolommen"><br>
+<input type="button" id="tabelGen" value="Genereer tabel">
+<input type="button" id="codeGen" value="Genereer code"><br>
+<div id ="uitvoer"></div>
+
+
+</body>
+</html>
+$(document).ready(function () {
+$('#btn').click(function () {
+var tekst = $(":text").val();
+$("input#input").val("");
+$("input#output").val(tekst);
+});
+});

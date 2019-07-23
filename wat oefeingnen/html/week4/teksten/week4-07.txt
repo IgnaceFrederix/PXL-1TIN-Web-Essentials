@@ -1,0 +1,26 @@
+Web Essentials
+Toegepaste Informatica
+
+HTML5
+CSS
+DOM
+JavaScript
+JQuery
+PHP
+Home
+
+Voorbeeld:
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+
+De koppen
+Binnen HTML zijn zes koppen (headings) gedefinieerd. Koppen zijn blokelementen en nemen dus telkens een nieuwe
+alinea in.
+Startend met <h1>...</h1> tot en met <h6>...</h6> worden telkens kleinere koppen gegenereerd. De normale tekstgrootte
+situeert zich meestal tussen <h3> en <h4>.
+
+Hogeschool PXL © 2015

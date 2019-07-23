@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oefening9 week 6</title>
+</head>
+<body>
+Geef een dag in :
+<input type="text" style="margin-left: 10px;" size="8"><br>
+<input type="button" value="Genereer tekst" id="myButton">
+<input type="text" style="margin-left: 16px;margin-top: 8px;" size="28" >
+<script>
+    document.getElementById("myButton").addEventListener("click",DagKiezer);
+    function DagKiezer() {
+        var dag = document.getElementsByTagName('text').item(0).value;
+        var uitkomst;
+        switch (dag) {
+            case "maandag":
+                uitkomst = "eerste";
+                break;
+            case "dinsdag":
+                uitkomst = "tweede";
+                break;
+            case "woensdag":
+                uitkomst = "derde";
+                break;
+            case "donderdag":
+                uitkomst = "vierde";
+                break;
+            case "vrijdag":
+                uitkomst = "vijfde";
+                break;
+            case "zaterdag":
+                uitkomst = "zesde";
+                break;
+            case "zondag":
+                uitkomst = "zevende";
+                break;
+            default:
+                uitkomst = "niet-bestaande";
+                break;
+        }
+        document.getElementsByTagName('text').item(1).value = "is de " + uitkomst + " dag van de week!";
+    }
+</script>
+</body>
+</html>

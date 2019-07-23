@@ -1,0 +1,44 @@
+<form action="Oefening.php" method="get">
+	<div class="tabel">
+		<div  class="rij">
+			<div  class="titel">Dobbelsteen 1</div>
+	        		<div  class="invoer">
+	        		<select name="dob1">
+					<option value="d2">d2</option>
+					<option value="d4">d4</option>
+					<option value="d6">d6</option>
+				</select> </div>
+		</div>
+		<div  class="rij">
+			<div  class="titel">Dobbelsteen 2</div>
+		        	<div  class="invoer">
+		        	<select name="dob2" >
+					<option value="d2">d2</option>
+					<option value="d4">d4</option>
+					<option value="d6">d6</option>
+				</select> </div>
+		</div>
+		<div  class="rij">
+			<div  class="titel">Dobbelsteen 3</div>
+	        		<div  class="invoer">
+	        		<select name="dob3" >
+					<option value="d2">d2</option>
+					<option value="d4">d4</option>
+					<option value="d6">d6</option>
+				</select> </div>
+		</div>
+		<div  class="rij">
+			<div  class="titel">Inzet:/td>
+			<div  class="invoer">
+				<input type="text" name = "inzet"/>
+			</div>
+		</div>
+	<div  class="rij">
+		<div class="titel">&nbsp;</div>
+		<div  class="invoer">
+			<input type="submit" value="verzend" 
+				name = "verzendknop"/> 		
+		</div>
+	</div>
+</form>	
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 Hulplijn</title>
+		<link href="oefening%205.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h2>HTML5 Hulplijn</h2>
+		</header>
+		<div>
+			<p>Gebruik dit formulier om vragen te stellen over HTML5 en CS5</p>
+			<br />
+			<label for="omschrijving" class="labelBold">Korte omschrijving van je probleem:</label>
+			<input type="text" class="textboxGroot" name="omschrijving" maxlength="150"/>
+			<br />
+			<label for="naam" class="labelBold">Naam:</label>
+			<input type="text" class="textboxMiddel" name="Naam" maxlength="30"/>
+			<br />
+			<label for="E-mailadres" class="labelBold">E-mailadres:</label>
+			<input type="email" class="textboxMiddel" name="E-mail" placeholder="voornaam.naam@domein.be" maxlength="50"/>
+			<label for="verplicht" id="Rood">(Verplicht)</label>
+		</div>
+		<div>
+			<p>Beschrijf wat je wil doen en welk probleem je hierbij tegenkomt:</p>
+			<textarea class="TextArea"></textarea>
+			<br />
+		</div>
+		<div id="probleemPaginaPositie">
+			<p>Indien mogelijk,plak hier de HTML code van de probleempagina:</p>
+			<textarea class="TextArea"></textarea>
+		</div>
+		<div id="optioneel">
+			<p>De onderstaande informatie is optioneel,maar wordt gewaardeerd</p>
+		</div>
+		<div id="Zoeklijst">
+			<label>Welke browser gebruik je</label>
+			<br />
+			<select>
+				<option value="Internet Explorer">Internet Explorer</option>
+				<option value="Firefox">Firefox</option>
+				<option value="Chrome">Chrome</option>
+				<option value="Opera">Opera</option>
+			</select>
+		</div>
+		<div id="editorOpmaak">
+			<label>Welke editor gebruik je om je HTML code te schrijven</label>
+			<br />
+			<input type="radio" name="editor" value="Dreamweaver" />
+			<label for="Dreamweaver">Dreamweaver</label>
+			<br />
+			<input type="radio" name="editor" value="Aptana" />
+			<label for="Aptana">Aptana</label>
+			<br />
+			<input type="radio" name="editor" value="Uitgebreide teksteditor(Scite/Notepad++)" />
+			<label for="Uitgebreide teksteditor">Uitgebreide teksteditor(Scite/Notepad++)</label>
+			<br />
+			<input type="radio" name="editor" value="Simpele teksteditor(Notepad)" />
+			<label for="Simpele teksteditor(Notepad)">Simpele teksteditor(Notepad)</label>
+			<br />
+			<input type="radio" name="editor" value="Andere" />
+			<label for="andere editor">Andere</label>
+			<input type="text" name="Andere editor" />
+		</div>
+		
+		<div id="knoppen">
+			<input type="submit" value="Verzend" />
+			<input type="reset" value="Wissen" />
+		</div>
+	</body>
+</html>

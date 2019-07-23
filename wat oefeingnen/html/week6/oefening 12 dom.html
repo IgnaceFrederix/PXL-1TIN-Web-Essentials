@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body >
+<h1> Sentence Reverser</h1>
+Phrase:
+<input type="text" id="zin"></br>
+Filter:
+<input type="text" id="filter"></br>
+<input type="button" id="buttoné" value="Reverse"></br>
+<output id="output"></output>
+<script>
+document.getElementById("buttoné").addEventListener("click", popup);
+function popup(){
+var str = document.getElementById('zin').value();
+var array = str.split(" ");
+document.getElementById("output").value = array;
+
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Voorbeeld2</title>
+        <meta charset="UTF-8">
+        <script  src="scripts/jquery-3.2.1.min.js"></script>
+        <script >
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#output").html("<h1>Geklikt</h1>");
+                    $("#btn").css("display","none");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+	<input type="button" id="btn" value="klik op mij"></input>
+    </body>
+</html>
+

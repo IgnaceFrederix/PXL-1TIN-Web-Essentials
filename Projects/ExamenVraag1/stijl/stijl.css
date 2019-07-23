@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-jun-2016, 9:04:00
+    Author     : Mijn PC
+*/
+
+body{
+    background-image:url(world.jpg);
+    
+    
+}
+h1{
+    font-family: Times New Roman,Arial, Helvetica;
+     text-shadow: 1px 1px gray;
+     font-size: 50px;
+}
+h2{
+    font-family: Arial,Times New Roman,Helvetica;
+    font-size: 30px;
+}
+h3{
+     font-family: Arial,Times New Roman,Helvetica;
+    font-size: 20px;
+}
+p{
+     font-family: Arial,Times New Roman,Helvetica;
+   
+}
+article{
+    
+   position: absolute;
+       background-color:rgba(255,255,255, 0.9);
+        max-width: 1200px;
+     display: inline-block;
+      margin: auto;
+      border: 10px grey;
+    border-radius: 10px;
+    position: relative;
+  left: 250px;
+    margin: 4px;
+    
+    
+}
+nav{
+    background-color: black;
+   width: 1200px;
+     background-repeat: repeat-x;
+    
+}
+a.navi{
+      background-color: black;
+    color: white;
+     float: left;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+a.navi:hover {
+     background-color: gray;
+     
+    
+}
+
+a.read{
+    color: gray;
+}
+a.olink{
+    color: green;
+    font-family: serif,sans-serif
+}
+aside{
+    text-align: left;
+    position: absolute;
+    left: 900px;
+    width: 350px;
+    bottom: 300px;
+}
+div{
+    width: 800px;
+    padding: 20px;
+}

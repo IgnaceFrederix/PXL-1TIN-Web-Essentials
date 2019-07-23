@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+     $ (document).ready(function () {
+         $("#doggie").click(function () {
+             $("#doggie").css("margin-right","+=70");
+         });
+         $("#wesley").click(function () {
+         $("#wesley").css("margin-left","+=70");
+         $("#titel").css("visibility","visible");
+     });
+     });
+
+
+    </script>
+</head>
+<style>
+    #doggie{
+        margin-right:50px;
+        top:120px;
+        float:right;
+    }
+    #wesley{
+        margin-left:50px;
+        top:120px;
+        float:left;
+    }
+    #titel{
+        color:white;
+        visibility: hidden;
+    }
+
+</style>
+<body bgcolor="black">
+<h1 id="titel">Kabouter Wesley</h1>
+<img src="images/wesley.jpg" id="wesley">
+<img src="images/hond.gif" id="doggie">
+</body>
+</html>

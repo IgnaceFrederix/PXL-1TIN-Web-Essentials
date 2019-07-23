@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Examen 2013-2014: Vraag 2</title>
+    <script type="text/javascript">
+        
+        function validateForm()
+        {
+        var naamTextBox = document.forms["datumFormulier"]["naamTextVeld"];
+        var datumTextBox = document.forms["datumFormulier"]["geboortedatumTextBox"];
+        var errorMessage = document.forms["datumFormulier"]["ErrorText"];
+        var x = document.forms["datumFormulier"]["naamTextVeld"].value;
+        var y = document.forms["datumFormulier"]["geboortedatumTextBox"].value;
+        
+        
+        if(x === null || x === "")
+        {
+            naamTextBox.style.backgroundColor = "Red";
+            naamTextBox.style.Color = "White";
+            errorMessage.value = "Naam is niet ingevuld";
+        }
+        else
+        {
+            naamTextBox.style.backgroundColor = "Green";
+            naamTextBox.style.Color = "Black";
+        }
+        
+        if(y === null || y === "")
+        {
+            datumTextBox.style.backgroundColor = "Red";
+            datumTextBox.style.color = "White";
+            errorMessage.value = "Datum is niet correct";
+        }
+        else
+        {
+            datumTextBox.style.backgroundColor = "Green";
+            datumTextBox.style.color = "Black";
+        }
+        
+       }
+       
+       function reset()
+       {
+                document.getElementsByName("naamTextVeld").style.backgroundColor = "White";
+                document.getElementsByName("naamTextVeld").value = "";
+                document.getElementsByName("geboortedatumTextBox").value ="";
+                document.getElementsByName("geboortedatumTextBox").style.backgroundColor = "White";
+       }
+       
+       
+        </script>
+            
+        
+</head>
+
+<body>
+    <fieldset>
+        <legend>Check Datum</legend>
+        <form name="datumFormulier" action="mailto:benjamin.dendas@student.pxl.be">
+            <table>
+                 <tr>
+                    <td><label>Error: </label></td>
+                    <td> <input type="text" name="ErrorText" value="" size="50" disabled="disabled" /></td>
+                </tr>
+                       <tr>
+                            <td><label>Naam: </label></td>
+                            <td><input onchange="validateForm();" type="text" name="naamTextVeld" value="" size="50" /></td>
+                        </tr>
+                <tr>
+                        <td><label>Geboortejaar: </label></td>
+                        <td><input onchange="validateForm();" type="datetime" name="geboortedatumTextBox" value="" size="50" /></td>
+                </tr>
+            </table>
+        </form>
+    <input onclick="reset();" type="submit" value="Registreer" name="RegistreerButton" />
+</fieldset>
+</body>
+</html>

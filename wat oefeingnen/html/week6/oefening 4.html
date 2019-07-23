@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body>
+Geef een getal in tussen 0 en 50
+<input type="text" style="margin-left:10px;" id="vak1" value=""> </br>
+<input  type="button" id ="bereken" value ="Genereer oneven getallen">
+<input type="text" id="uitkomst" style="width: 450px; margin-top:10px; margin-left:20px;" >
+<output id="output"></output>
+<script>
+ 
+  document.getElementById("bereken").addEventListener("click", samenvoegen);
+ function samenvoegen() {
+ var getal2 = 1;
+ var getal1 = document.getElementById('vak1').value;
+while(getal1 > getal2){
+if(getal2%2 !== 0){
+document.getElementById("uitkomst").value += getal2 + " " ;
+}
+getal2 += 1;
+}
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

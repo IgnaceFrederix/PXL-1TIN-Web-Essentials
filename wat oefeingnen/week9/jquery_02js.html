@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voorbeeld2</title>
+    <meta charset="UTF-8">
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("btn").addEventListener("click",
+                function () {
+                    document.getElementById("output").innerHTML = "<h1>Geklikt</h1>";
+                    document.getElementById("btn").style.display = "none";
+                });
+        });
+    </script>
+</head>
+<body>
+<div id="output"></div>
+<input type="button" id="btn" value="klik op mij"></input>
+</body>
+</html>
+

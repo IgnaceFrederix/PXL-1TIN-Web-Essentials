@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #olifant,#neushoorn,#muis,#konijn{
+        height:200px;
+        width:200px;
+    }
+</style>
+<body>
+<p id="soort"> </p><br>
+<img id="olifant" src="../images/elephant.png" alt="Olifant">
+<img id="neushoorn" src="../images/rhino.png" alt="Neushoorn">
+<img id="muis" src="../images/mouse.png" alt="Muis">
+<img id="konijn" src="../images/rabbit.png" alt="Konijn">
+<script>
+    var groot = 1;
+    document.getElementById("olifant").addEventListener("click",GrootOlifant);
+    document.getElementById("neushoorn").addEventListener("click",GrootNeushoorn);
+    document.getElementById("muis").addEventListener("click",GrootMuis);
+    document.getElementById("konijn").addEventListener("click",GrootKonijn);
+    function GrootOlifant() {
+        document.getElementById("soort").innerHTML = document.getElementById("olifant").alt;
+        if(document.getElementById("olifant").style.height == "500px") {
+            document.getElementById("olifant").style.height = "200px";
+            document.getElementById("olifant").style.width = "200px";
+
+        }else {
+            document.getElementById("olifant").style.height = "500px";
+            document.getElementById("olifant").style.width = "500px";
+
+        }
+
+    }
+    function GrootNeushoorn() {
+        document.getElementById("soort").innerHTML = document.getElementById("neushoorn").alt;
+        if(document.getElementById("neushoorn").style.height == "500px") {
+            document.getElementById("neushoorn").style.height = "200px";
+            document.getElementById("neushoorn").style.width = "200px";
+
+        }else {
+            document.getElementById("neushoorn").style.height = "500px";
+            document.getElementById("neushoorn").style.width = "500px";
+
+        }
+
+    }
+    function GrootMuis() {
+        document.getElementById("soort").innerHTML = document.getElementById("muis").alt;
+        if (document.getElementById("muis").style.height == "500px") {
+            document.getElementById("muis").style.height = "200px";
+            document.getElementById("muis").style.width = "200px";
+
+        } else {
+            document.getElementById("muis").style.height = "500px";
+            document.getElementById("muis").style.width = "500px";
+
+        }
+    }
+        function GrootKonijn() {
+            document.getElementById("soort").innerHTML = document.getElementById("konijn").alt;
+            if(document.getElementById("konijn").style.height == "500px") {
+                document.getElementById("konijn").style.height = "200px";
+                document.getElementById("konijn").style.width = "200px";
+
+            }else {
+                document.getElementById("konijn").style.height = "500px";
+                document.getElementById("konijn").style.width = "500px";
+
+            }
+
+        }
+
+
+
+</script>
+</body>
+</html>

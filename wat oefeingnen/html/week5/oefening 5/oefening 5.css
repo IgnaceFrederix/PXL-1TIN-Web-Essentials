@@ -1,0 +1,65 @@
+body {
+	background-color: #EBEBEB;
+}
+
+h2 {
+	color: #161987;
+}
+
+.labelBold {
+	display: inline-block;
+	position: relative;
+	min-width: 275px;
+	font-weight: bold;
+}
+
+.textboxMiddel {
+	display: inline-block;
+	position: relative;
+	min-width: 250px;
+}
+
+.textboxGroot {
+	display: inline-block;
+	position: relative;
+	min-width: 375px;
+}
+
+#Rood {
+	color: red;
+}
+
+.TextArea {
+	display: inline-block;
+	min-width: 300px;
+	height: 200px;
+	width: 450px;
+}
+
+#probleemPaginaPositie {
+	position: relative;
+	left: 460px;
+	top: -257px;
+}
+
+#optioneel {
+	left: 250px;
+	position: relative;
+	top: -257px;
+}
+
+#Zoeklijst {
+	position: relative;
+	top: -257px;
+}
+
+#editorOpmaak {
+	position: relative;
+	top: -300px;
+	left: 460px;
+}
+
+#knoppen {
+	position: relative;
+	top: -257px;
+}

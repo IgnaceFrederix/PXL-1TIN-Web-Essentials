@@ -1,0 +1,159 @@
+/* Examen 2015-2016 vraag1 */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/world.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 1200px;
+    margin: 40px auto;
+
+    background-color: white;
+    opacity: 0.9;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+header > h1 {
+    font-family: "Times New Roman", sans-serif;
+    text-shadow: 3px 3px 3px gray;
+    font-size: 45pt;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+header > h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    padding-left: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+nav#nav_top {
+    width: 100%;
+    background-color: black;
+}
+
+nav#nav_top>ul{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+nav#nav_top>ul>li {
+    display: block;
+    width: 125px;
+}
+
+nav#nav_top>ul>li:first-child {
+    padding-left: 20px;
+}
+
+nav#nav_top>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+    text-align: center;
+}
+
+nav#nav_top>ul>li>a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+main>h2 {
+    margin: 5px 0;
+}
+
+
+hr {
+    border: solid black 1px;
+    width: 95%;
+}
+
+
+article>article {
+    padding-left: 2px;
+}
+
+article>h3 {
+    margin: 0;
+}
+
+
+article>p {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+article>a {
+    text-decoration: none;
+    color: gray;
+    padding-left: 10px;
+}
+
+#other_section {
+    width: 70%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#other_nav {
+    width: 30%;
+}
+
+#other_nav>nav {
+    width: 100%;
+}
+
+#other_nav>nav>ul {
+    width: 100%;
+    padding: 0;
+    padding-left: 20px;
+
+    margin: 0;
+}
+
+#other_nav>nav>ul:nth-child(odd) {
+    font-family: Serif;
+}
+
+#other_nav>nav>ul:nth-child(even) {
+    font-family: Sans-serif;
+    font-style: italic;
+}
+
+
+#other_nav>nav>ul>li {
+    display: block;
+}
+
+#other_nav>nav>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: green;
+    text-decoration: none;
+}
+

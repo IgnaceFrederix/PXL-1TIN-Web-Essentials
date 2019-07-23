@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Zoek de fouten</title>
+</head>
+<body>
+Voornaam
+<input type="text" style="margin-left:72px;" id="vak1" value=""> </br>
+Achternaam
+<input type="text" id="vak2" style="margin-left:60px; margin-top:10px;" value=""></br>
+<input  type="button" id ="bereken" value ="Genereer melding">
+<input type="text" id="uitkomst" style="width: 450px; margin-top:10px; margin-left:20px;" >
+<output id="output"></output>
+<script>
+ 
+  document.getElementById("bereken").addEventListener("click", samenvoegen);
+ function samenvoegen() {
+ 
+ var getal1 = document.getElementById('vak1').value;
+ var getal2 = document.getElementById('vak2').value;
+ if(getal1 !== "" && getal2 !== ""){
+ var boodschap = "Welkom, " + getal1 + " " + getal2;
+ document.getElementById("uitkomst").value = boodschap;
+ }else{
+ document.getElementById("uitkomst").value = "Vul alle velden in aub";
+ }
+  };
+ 
+ 
+
+ 
+
+</script>
+</body>
+</html>

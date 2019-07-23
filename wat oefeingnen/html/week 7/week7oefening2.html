@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 7 oefening 2</title>
+</head>
+<body>
+<input type="button" id="button1" value="Opmaak 1" style="background-color:lawngreen;">
+<input type="button" id="button2" style="margin-left: 7px; background-color:lawngreen;" value="Opmaak 2"><br>
+
+<h1 id="titel">Veranderen van opmaak door dom-scripting</h1>
+<p id="eerste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+    is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+</p>
+<p id="laatste">Hogeschool PXL <br> Blackboard</p>
+
+<script>
+    document.getElementById('button1').addEventListener("click",Opmaak1);
+    document.getElementById('button2').addEventListener("click",Opmaak2);
+    window.addEventListener('load',Opmaak1);
+    
+    function Opmaak1() {
+        document.body.style.backgroundColor = "#74f442" ;
+        document.getElementById("titel").style.textAlign = "center";
+        document.getElementById("titel").style.color = "yellow";
+        document.getElementById("eerste").style.color = "blue";
+        document.getElementById("eerste").style.marginRight ="15%";
+        document.getElementById("eerste").style.marginLeft ="15%";
+        document.getElementById("eerste").style.textAlign = "center";
+        document.getElementById("laatste").style.color = "red";
+        document.getElementById("laatste").style.textDecoration ="none";
+
+    }
+    function Opmaak2() {
+        document.body.style.backgroundColor = "#617c57" ;
+        document.getElementById("titel").style.textAlign = "left";
+        document.getElementById("titel").style.color = "purple";
+        document.getElementById("eerste").style.color = "white";
+        document.getElementById("eerste").style.marginRight ="0%";
+        document.getElementById("eerste").style.marginLeft ="0%";
+        document.getElementById("eerste").style.textAlign = "left";
+        document.getElementById("laatste").style.color = "green";
+        document.getElementById("laatste").style.textDecoration ="underline";
+    }
+</script>
+</body>
+</html>

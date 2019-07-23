@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery - prevent2</title>
+    <style>
+        #naam,#voornaam,#email{
+            width:150px;
+            display:inline-block;
+            height:21px;
+            margin-bottom: 6px;
+        }
+        text{
+            float:left;
+        }
+        .leeg {
+            color: red;
+            background-color: yellow;
+        }
+
+        input {
+            color: black;
+            background-color: white;
+        }
+    </style>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input[type='submit']").click(function (event) {
+                $("span[class='foutmelding']").remove;
+                var fout = false;
+                var $eerste = $('input:nth-child(1)');
+                if ($("").empty() && $("input:nth-child(1)").val().trim() === "") {
+                    var span = $("<span>")
+                        .css("color", "red")
+                        .attr("class", "foutmelding")
+                        .append("geef een waarde in");
+                    $("input:nth-child(1)").after(span);
+                    fout = true;
+                }
+                if ($("input:nth-child(2)").val >= 0 && $("input:nth-child(2)").val() <= 120) {
+                    var span = $("<span>")
+                        .css("color", "red")
+                        .attr("class", "foutmelding")
+                        .append("geen geldige leeftijd");
+                    $("input:nth-child(2)").after(span);
+                    fout = true;
+                }
+                if (fout) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<form action="verwerk.php" method="get">
+    <label for id="naam">Naam:</label><input type="text" name="naam"/><br/>
+    <label for id="voornaam">Leeftijd:</label><input type="text" name="leeftijd"/><br/>
+    <label for id="email">Email:</label><input type="text" name="email"><br/>
+    <input type="submit" value="Verzenden"/>
+</form>
+</body>
+</html>

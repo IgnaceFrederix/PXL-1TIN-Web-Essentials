@@ -1,0 +1,37 @@
+body {
+	background-color: #E2ECD9;
+}
+
+fieldset {
+	border-color: #FF0000;
+	border-radius: 10px 10px;
+}
+
+legend {
+	font-size: 16pt;
+	color: #8EA38E;
+}
+
+label {
+	display: inline-block;
+	min-width: 125px;
+	margin-top: 5px;
+}
+
+.inspringen {
+	margin-left: 40px;
+}
+
+#knoppenwis {
+	margin-left: 30px;
+	margin-top: 20px;
+	border-radius: 10px 10px;
+	background-color: #A2AC99;
+}
+
+#knopverzend {
+	margin-top: 20px;
+	border-radius:  10px 10px;
+	background-color: #A2AC99;
+}
+	

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulier</title>
+		<link href="stijl.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<h2>Formulier</h2>
+			<hr />
+		</header>
+		<div>
+			<form>
+				<label for="naam">Naam:</label>
+				<input class="achterground-bruin" type="text" name="Naam" />
+				<br />
+				<label for="Paswoord">Paswoord:</label>
+				<input class="achterground-bruin" type="password" name="paswoord" />
+				<br />
+				<label for="land">Land</label>
+				<select class="achterground-bruin" name="landen" size="1">
+					<option value="Belgium">Belgium</option>
+					<option value="Belarus">Belarus</option>
+					<option value="Nederland">Nederland</option>
+				</select>
+				<br />
+				<label></label>
+				<input type="radio" name="Geslacht" value="Mannelijk" checked="checked" />
+				<label>mannelijk</label>
+				<br />
+				<label>Geslacht</label>
+				<input type="radio" name="Geslacht" value="vrouwelijk" />
+				<label>vrouwelijk</label>
+				<br />
+				<label></label>
+				<input type="radio" name="Geslacht" value="transsexueel" />
+				<label>transsexueel</label>
+				<br />
+				<label></label>
+				<input type="checkbox" name="windows XP/Vista" value="Windows XP/Vista" />
+				<label>Windows XP/Vista</label>
+				<br />
+				<label></label>
+				<input type="checkbox" name="Windows 7" value="Windows 7" />
+				<label>Windows 7</label>
+				<br />
+				<label>Besturingssysteem</label>
+				<input type="checkbox" name="Windows 8/8.1" value="Windows 8/8.1" checked="checked"/>
+				<label>Windows 8/8.1</label>
+				<br />
+				<label></label>
+				<input type="checkbox" name="Linux" value="Linux" />
+				<label>Linux</label>
+				<br />
+				<label></label>
+				<input type="checkbox" name="MacOS X" value="MacOS X" />
+				<label>MacOS X</label>
+				<br />
+				<label id="opmerkingen">Opmerkingen</label>
+				<textarea class="achterground-bruin" cols="30" rows="8"></textarea>
+				<br />
+				<input class="knoppen" type="submit" value="Formulier verzenden" />
+				<input class="knoppen" id="wissen" type="reset" value="Alles wissen"/>
+			</form>
+		</div>
+	</body>
+</html>

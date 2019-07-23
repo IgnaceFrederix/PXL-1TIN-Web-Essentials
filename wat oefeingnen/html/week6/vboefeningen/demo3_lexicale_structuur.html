@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo3: lexicale structuur</title>
+</head>
+<body>
+<div>
+    <output id="sterrenbeeld"></output>
+</div>
+<script>
+    "use strict";
+    var sterrenbeeld = "waterman";
+    var jaar = 2017;
+    /*
+       JavaScript is hoofdlettergevoelig
+     */
+    sterrenbeeld = "boogschutter";
+    /*
+        Gereserveerde woorden (bv. delete) kan je niet gebruiken
+     */
+    var isDeleted = true;
+    document.getElementById("sterrenbeeld").innerText =
+        sterrenbeeld;
+</script>
+</body>
+</html>

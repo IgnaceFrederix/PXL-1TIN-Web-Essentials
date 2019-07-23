@@ -1,0 +1,21 @@
+
+body{
+	
+}
+div.artikels{
+	border:3px black solid;
+	border-radius: 10px 10px 10px 10px;
+	min-width:20%;
+	max-width:23%;
+	height:auto;
+	margin:5px 5px 5px 5px;
+	float:left;
+	background-color:aqua;
+	
+}
+p ,h2{
+	margin-left:5px;
+}
+h2{
+	margin-bottom:10px;
+}
